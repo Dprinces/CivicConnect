@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a Request</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4 px-6 flex items-center">
+    <button onclick="history.back()" class="text-gray-600 mr-4">
+      <!-- Back Arrow Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <h1 class="text-xl font-semibold">Create a Request</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-lg mx-auto bg-white p-8 mt-10 rounded-lg shadow-md">
+    <form action="#" method="POST">
+      <!-- Request Image Upload -->
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2">Request's Image</label>
+        <div class="border-2 border-gray-300 border-dashed rounded-lg p-4 text-center text-gray-500">
+          Add image to support your request
+        </div>
+      </div>
+
+      <!-- Request Header -->
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2">Request's header</label>
+        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Add a header to your request" />
+      </div>
+
+      <!-- Request Description -->
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2">Request's description</label>
+        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" rows="4" placeholder="Explain your request in detail"></textarea>
+      </div>
+
+      <!-- Category -->
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2">Category</label>
+        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Select category (e.g., Roads, Schools, Healthcare, Utilities)" />
+      </div>
+
+      <!-- Submit and Cancel Buttons -->
+      <div class="flex justify-between items-center">
+        <button type="submit" class="w-full bg-green-700 text-white font-semibold py-2 rounded-lg">
+          Submit Request
+        </button>
+        <button type="button" class="w-full mt-4 text-green-700 font-semibold py-2 rounded-lg">
+          Cancel Request
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-10">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Contact Section -->
+      <div class="bg-white-600 p-6 rounded-lg flex flex-col items-center">
+        <h4 class="text-xl font-semibold mb-4">
+          Have a question? Send your questions to the team.
+        </h4>
+        <p>We respond within 48 hours.</p>
+        <button
+          class="mt-4 bg-white text-green-700 px-4 py-2 rounded hover:bg-gray-200"
+        >
+          Go to help center
+        </button>
+      </div>
+
+      <!-- Newsletter Subscription -->
+      <div class="bg-green-600 p-6 rounded-lg flex flex-col items-center">
+        <h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+        <p class="mb-4">Be the first to hear from us.</p>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="mb-4 px-4 py-2 rounded w-full text-gray-700"
+        />
+        <button
+          class="bg-white text-green-700 px-4 py-2 rounded hover:bg-gray-200"
+        >
+          Subscribe
+        </button>
+      </div>
+
+      <!-- App Download Links -->
+      <div class="flex items-center space-x-8 p-6 bg-green-600 rounded-lg">
+        <div>
+          <img src="./assests/image/download-removebg-preview 1.png" alt="App preview" class="w-32 h-auto rounded-lg">
+        </div>
+        <!-- Content Section -->
+        <div class="flex flex-col items-center">
+          <h4 class="text-xl font-semibold mb-4 text-white">Download our app</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-black text-white px-4 py-2 rounded">App Store</a>
+            <a href="#" class="bg-black text-white px-4 py-2 rounded">Google Play</a>
+          </div>
+        </div>
+        
+        <!-- Image Section -->
+       
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-100 py-10">
+    <div
+      class="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-8 lg:space-y-0 lg:space-x-10"
+    >
+      <!-- Contact Information and Social Links -->
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <img src="./assests/image/CivicConnect.png" alt="CivicConnect" class="w-10 h-10" />
+        
+          <span class="text-green-700 text-2xl font-bold">CivicConnect</span>
+        </div>
+        <p class="text-gray-700">
+          Federal Secretariat Complex Phase I, Annex III,<br />
+          Shehu Shagari Way, FCT Nigeria.<br />P.M.B. 12578
+        </p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-500 hover:text-gray-700">
+            <i class="fab fa-facebook fa-lg"></i>
+            <!-- Facebook Icon -->
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-700">
+            <i class="fab fa-twitter fa-lg"></i>
+            <!-- Twitter Icon -->
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-700">
+            <i class="fab fa-instagram fa-lg"></i>
+            <!-- Instagram Icon -->
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-700">
+            <i class="fab fa-linkedin fa-lg"></i>
+            <!-- LinkedIn Icon -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Embed -->
+      <div class="w-full lg:w-1/2 h-64">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=...Federal Secretariat Complex Phase I, Annex III,
+          Shehu Shagari Way, FCT Nigeria."
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-lg"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Bottom Text -->
+    <div class="text-center text-gray-500 text-sm mt-8">
+      Designed by Talabi Oluwasefunmi Joy & Developed by DprinceDeveloper. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
