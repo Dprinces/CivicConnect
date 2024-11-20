@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Request | CivicConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <!-- Logo and Title -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="./assests/image/CivicConnect.png"
+            alt="CivicConnect"
+            class="w-10 h-10"
+          />
+          <span class="text-green-700 text-2xl font-bold">CivicConnect</span>
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-6 text-gray-700">
+          <a href="./index.html" class="hover:text-green-700">Home</a>
+          <a href="./AboutUs.html" class="hover:text-green-700">About us</a>
+          <a href="./AllReports.html" class="hover:text-green-700"
+            >All Reports</a
+          >
+          <a href="./CreateRequest.html" class="text-green-700 font-bold"
+            >Submit Request</a
+          >
+          <a href="./TrendingRequests.html" class="hover:text-green-700"
+            >Trending Requests</a
+          >
+        </div>
+
+        <!-- Right Side Buttons -->
+        <div class="hidden md:flex items-center space-x-4">
+          <button class="bg-green-700 text-white px-4 py-1 rounded">
+            <a href="./LoginPage.html">Log in</a>
+          </button>
+          <button
+            class="border border-green-700 text-green-700 px-3 py-1 rounded flex items-center"
+          >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.0002 19.0001L14.6572 14.6571M14.6572 14.6571C15.4001 13.9142 15.9894 13.0323 16.3914 12.0616C16.7935 11.091 17.0004 10.0507 17.0004 9.00008C17.0004 7.94948 16.7935 6.90917 16.3914 5.93854C15.9894 4.96791 15.4001 4.08597 14.6572 3.34308C13.9143 2.6002 13.0324 2.01091 12.0618 1.60886C11.0911 1.20681 10.0508 0.999878 9.00021 0.999878C7.9496 0.999878 6.90929 1.20681 5.93866 1.60886C4.96803 2.01091 4.08609 2.6002 3.34321 3.34308C1.84288 4.84341 1 6.8783 1 9.00008C1 11.1219 1.84288 13.1568 3.34321 14.6571C4.84354 16.1574 6.87842 17.0003 9.00021 17.0003C11.122 17.0003 13.1569 16.1574 14.6572 14.6571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Search
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6 text-green-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white space-y-2 px-4 py-3 border-t border-gray-200"
+      >
+        <a href="./index.html" class="block text-gray-700 hover:text-green-700"
+          >Home</a
+        >
+        <a
+          href="./AboutUs.html"
+          class="block text-gray-700 hover:text-green-700"
+          >About us</a
+        >
+        <a
+          href="./AllReports.html"
+          class="block text-gray-700 hover:text-green-700"
+          >All Reports</a
+        >
+        <a href="./CreateRequest.html" class="block text-green-700 font-bold"
+          >Submit Request</a
+        >
+        <a
+          href="./TrendingRequests.html"
+          class="block text-gray-700 hover:text-green-700"
+          >Trending Requests</a
+        >
+        <button class="bg-green-700 text-white px-4 py-2 w-full rounded mt-2">
+          <a href="./LoginPage.html">Log in</a>
+        </button>
+        <button
+          class="border border-green-700 text-green-700 px-4 py-2 w-full rounded mt-2 flex items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35m1.15-5.2A7.8 7.8 0 105.8 5.8a7.8 7.8 0 0010.9 10.9z"
+            />
+          </svg>
+          Search
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-10">
+      <div class="container mx-auto">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+            Create a Request
+          </h2>
+          <form action="#" method="post">
+            <!-- Request Image -->
+            <div class="mb-4">
+              <label
+                for="requestImage"
+                class="block text-gray-700 font-medium mb-2"
+                >Request's Image</label
+              >
+              <div
+                class="border border-dashed border-gray-400 p-6 rounded-lg text-center cursor-pointer"
+              >
+                <input type="image" id="requestImage" class="hidden" />
+                <span class="text-gray-600"
+                  >Add image to support your request</span
+                >
+              </div>
+            </div>
+
+            <!-- Request Header -->
+            <div class="mb-4">
+              <label
+                for="requestHeader"
+                class="block text-gray-700 font-medium mb-2"
+                >Request's Header</label
+              >
+              <input
+                type="text"
+                id="requestHeader"
+                class="w-full border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600"
+                placeholder="Add a header to your request"
+              />
+            </div>
+
+            <!-- Request Description -->
+            <div class="mb-4">
+              <label
+                for="requestDescription"
+                class="block text-gray-700 font-medium mb-2"
+                >Request's Description</label
+              >
+              <textarea
+                id="requestDescription"
+                rows="4"
+                class="w-full border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600"
+                placeholder="Explain your request in detail"
+              ></textarea>
+            </div>
+
+            <!-- Category -->
+            <div class="mb-4">
+              <label for="category" class="block text-gray-700 font-medium mb-2"
+                >Category</label
+              >
+              <input
+                type="text"
+                id="category"
+                class="w-full border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600"
+                placeholder="Select category (e.g., Roads, Schools, Healthcare, Utilities)"
+              />
+            </div>
+
+            <!-- Location -->
+            <div class="mb-4">
+              <label for="location" class="block text-gray-700 font-medium mb-2"
+                >Location</label
+              >
+              <textarea
+                id="location"
+                rows="2"
+                class="w-full border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600"
+                placeholder="Please give full description of the location for which this request is made"
+              ></textarea>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex justify-between items-center">
+              <a
+                href="#"
+                class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+                >Submit Request</a
+              >
+              <a
+                href="#"
+                class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700"
+                >Cancel Request</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-10">
+      <div class="text-center text-white-00 text-lg mt-">
+        Designed by Talabi Oluwasefunmi Joy & Developed by DprinceDeveloper. All
+        rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
