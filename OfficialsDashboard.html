@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicConnect Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <aside class="w-64 bg-white shadow-md">
+      <div class="px-6 py-4">
+        <h1 class="text-lg font-bold text-green-700">CivicConnect</h1>
+      </div>
+      <nav class="px-6">
+        <ul class="space-y-4 text-gray-600">
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">dashboard</span> Dashboard</a></li>
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">person</span> Profile</a></li>
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">file_upload</span> Submit Report</a></li>
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">report</span> My Reports</a></li>
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">account_circle</span> Citizen Request</a></li>
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">list_alt</span> All Reports</a></li>
+          <li><a href="#" class="flex items-center hover:text-green-700"><span class="material-icons mr-2">home</span> Home Page</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 bg-gray-50 p-6">
+      <header class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-green-700">Hello Dr. Bosun Tijani, Welcome to your CivicConnect Dashboard</h1>
+        <img src="logo.png" alt="Logo" class="h-12">
+      </header>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold text-gray-700">Top Request from Citizen today</h2>
+        <div class="bg-white shadow-md rounded-md p-4 mt-4">
+          <div class="flex">
+            <img src="https://via.placeholder.com/150" alt="Request Image" class="w-24 h-24 rounded-md">
+            <div class="ml-4">
+              <h3 class="text-gray-800 font-semibold">REQUEST FOR A CLEAN WATER SOLUTION</h3>
+              <p class="text-gray-600 text-sm mt-2">I kindly request the government to provide clean and safe water in our community to improve our health and quality of life.</p>
+              <table class="mt-4 text-sm">
+                <tr>
+                  <td class="text-gray-600">Category:</td>
+                  <td class="font-semibold">Clean water solution</td>
+                </tr>
+                <tr>
+                  <td class="text-gray-600">Urgency level:</td>
+                  <td class="font-semibold">High</td>
+                </tr>
+                <tr>
+                  <td class="text-gray-600">Date:</td>
+                  <td class="font-semibold">07/11/2024</td>
+                </tr>
+                <tr>
+                  <td class="text-gray-600">Status:</td>
+                  <td class="font-semibold text-yellow-500">Pending</td>
+                </tr>
+              </table>
+              <div class="mt-4">
+                <a href="#" class="text-green-700 font-semibold hover:underline">View Request Details</a>
+                <button class="ml-4 bg-green-700 text-white py-1 px-3 rounded-md hover:bg-green-800">Start this Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-semibold text-gray-700">Report Insight</h2>
+        <div class="grid grid-cols-3 gap-4 mt-4">
+          <div class="bg-white shadow-md p-4 text-center rounded-md">
+            <h3 class="text-gray-700">Reports Submitted</h3>
+            <p class="text-2xl font-bold text-green-700">2</p>
+          </div>
+          <div class="bg-white shadow-md p-4 text-center rounded-md">
+            <h3 class="text-gray-700">In Progress</h3>
+            <p class="text-2xl font-bold text-yellow-500">1</p>
+          </div>
+          <div class="bg-white shadow-md p-4 text-center rounded-md">
+            <h3 class="text-gray-700">Completed</h3>
+            <p class="text-2xl font-bold text-green-700">1</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

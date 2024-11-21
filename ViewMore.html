@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicConnect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="path-to-logo.png" alt="Logo" class="h-8 sm:h-12">
+        <h1 class="text-green-700 text-xl sm:text-2xl font-bold">CivicConnect</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-gray-700">
+        <a href="#" class="hover:text-green-700">Home</a>
+        <a href="#" class="hover:text-green-700">About us</a>
+        <a href="#" class="hover:text-green-700">All Reports</a>
+        <a href="#" class="hover:text-green-700">Create Request</a>
+        <a href="#" class="hover:text-green-700">All Requests</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="block md:hidden text-green-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-1/4">
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <div class="flex items-center justify-center">
+          <button class="bg-green-700 text-white text-lg font-bold px-6 py-3 rounded-lg shadow-lg w-full">
+            + Create Request
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="w-full md:w-3/4 bg-white shadow-lg rounded-lg overflow-hidden">
+      <!-- Back Button -->
+      <div class="px-4 sm:px-6 py-4 flex items-center space-x-2">
+        <button class="text-green-700 font-bold text-xl">&larr;</button>
+        <span class="text-gray-700 font-semibold">Full Page</span>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full">
+        <img src="path-to-image.jpg" alt="Clean Water" class="w-full h-48 sm:h-64 object-cover">
+      </div>
+
+      <!-- Content -->
+      <div class="px-4 sm:px-6 py-6">
+        <h2 class="text-lg sm:text-xl font-bold text-center text-gray-800 mb-4">
+          REQUEST FOR A CLEAN WATER SOLUTION
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Poor water quality affects people, the economy, and the environment. Contaminated water is the primary cause of diseases such as typhoid fever, diarrhea, and dysentery in Nigeria. These diseases kill people and are very costly to the economy.
+          In the Niger Delta, contamination by oil exploration activities is a big worry. It has led to declining fish harvests and loss of biodiversity. The poor are affected the most.
+        </p>
+        <h3 class="font-bold text-gray-800 mb-2">What Must Be Done</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Nigeria needs to change the way it manages water. Firstly, it should include a wider range of stakeholders. Secondly, it should draw on the knowledge and disciplines of a variety of sectors. 
+          Providing potable water involves science, policy, and practice. All these must be considered in developing the proper management system for water in the country. Such a system needs more flexible, adaptive, and responsible institutions.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Federal, state, and local governments should work together to update and tighten regulations controlling water quality. Nigeria also needs a water quality monitoring network and a water quality database. The database would store physical, chemical, biological, and ecological information.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          It's also important to raise public awareness about the value of water and to increase public participation in water supply schemes. Getting people involved helps to sustain water infrastructure.
+        </p>
+        <p class="text-sm text-gray-500 mt-4">
+          Location: Jos East LGA, Plateau State
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class="border-t px-4 sm:px-6 py-4 flex justify-between items-center">
+        <button class="flex items-center space-x-2 text-green-700">
+          <span>&uarr; Upvote</span>
+        </button>
+        <button class="flex items-center space-x-2 text-red-700">
+          <span>&darr; Downvote</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    Designed by Tabisi Oluwasefunmi Joy. All rights reserved.
+  </footer>
+
+</body>
+</html>
