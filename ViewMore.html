@@ -15,13 +15,20 @@
         <img src="path-to-logo.png" alt="Logo" class="h-8 sm:h-12">
         <h1 class="text-green-700 text-xl sm:text-2xl font-bold">CivicConnect</h1>
       </div>
-      <nav class="hidden md:flex space-x-6 text-gray-700">
-        <a href="#" class="hover:text-green-700">Home</a>
-        <a href="#" class="hover:text-green-700">About us</a>
-        <a href="#" class="hover:text-green-700">All Reports</a>
-        <a href="#" class="hover:text-green-700">Create Request</a>
-        <a href="#" class="hover:text-green-700">All Requests</a>
-      </nav>
+      <!-- Navigation Links and Login -->
+      <div class="flex items-center space-x-6">
+        <nav class="hidden md:flex space-x-6 text-gray-700">
+          <a href="#" class="hover:text-green-700">Home</a>
+          <a href="#" class="hover:text-green-700">About us</a>
+          <a href="#" class="hover:text-green-700">All Reports</a>
+          <a href="#" class="hover:text-green-700">Create Request</a>
+          <a href="#" class="hover:text-green-700">All Requests</a>
+        </nav>
+        <!-- Login Button -->
+        <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">
+          <a href="./LoginPage.html">Login</a>
+        </button>
+      </div>
       <!-- Mobile Menu Button -->
       <button class="block md:hidden text-green-700 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,6 +37,7 @@
       </button>
     </div>
   </header>
+  
 
   <main class="container mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
     <!-- Sidebar -->

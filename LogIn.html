@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - CivicConnect</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-green-700">
+  <div class="min-h-scree flex items-center justify-center">
+    <div class="bg-white w-full max-w-md rounded-lg shadow-lg p-6">
+      <div class="text-center">
+        <h1 class="text-2xl font-bold text-gray-800">LOG IN</h1>
+        <p class="text-gray-600 mt-1">Kindly enter your log in details in the space provided below</p>
+      </div>
+      
+      <!-- Login Form -->
+      <form class="mt-6">
+        <div class="mb-4">
+          <label for="username" class="block text-gray-700 font-semibold">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-700">
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-semibold">Password</label>
+          <input type="password" id="password" name="password" placeholder="Input your password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-700">
+        </div>
+
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center">
+            <input type="checkbox" id="remember-me" name="remember-me" class="h-4 w-4 text-green-700 border-gray-300 rounded focus:ring-green-700">
+            <label for="remember-me" class="ml-2 text-gray-600">Remember me</label>
+          </div>
+          <a href="#" class="text-green-700 text-sm font-semibold">Forgot your password?</a>
+        </div>
+
+        <button type="submit" class="w-full bg-green-700 text-white py-2 rounded font-semibold hover:bg-green-800 focus:outline-none">Log in</button>
+      </form>
+
+      <!-- Social Logins -->
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="#" class="text-green-700 text-2xl">
+          <i class="fab fa-google"></i> <!-- Replace this with an icon font -->
+        </a>
+        <a href="#" class="text-green-700 text-2xl">
+          <i class="fab fa-facebook"></i> <!-- Replace this with an icon font -->
+        </a>
+        <a href="#" class="text-green-700 text-2xl">
+          <i class="fab fa-twitter"></i> <!-- Replace this with an icon font -->
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <p class="mt-4 text-center text-gray-600">
+        Don’t have an account? <a href="#" class="text-green-700 font-semibold">Sign up</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

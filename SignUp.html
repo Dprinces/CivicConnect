@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - CivicConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-green-700">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <div class="flex items-center space-x-3">
+          <img src="./assests/image/CivicConnect.png" alt="Logo" class="h-10" />
+          <h1 class="text-green-700 text-2xl font-bold">CivicConnect</h1>
+        </div>
+        <nav class="flex space-x-6">
+          <a href="./index.html" class="text-green-700 hover:text-green-900"
+            >Home</a
+          >
+          <a href="./AboutUs.html" class="text-green-700 hover:text-green-900"
+            >About us</a
+          >
+          <a
+            href="./AllReports.html"
+            class="text-green-700 hover:text-green-900"
+            >All Reports</a
+          >
+          <a href="#" class="text-green-700 hover:text-green-900"
+            >Create Request</a
+          >
+          <a
+            href="./AllRequest.html"
+            class="text-green-700 hover:text-green-900"
+            >All Requests</a
+          >
+          <button class="bg-green-700 text-white px-4 py-2 rounded">
+           LogIn 
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Signup Form Section -->
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="bg-white rounded-lg shadow-lg w-1/2 p-8">
+        <h2 class="text-2xl font-bold text-center text-black-700 mb-4">
+          SIGN UP
+        </h2>
+        <p class="text-center text-gray-500 mb-6">
+          Kindly enter your details in the space provided below
+        </p>
+
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="username" class="block text-gray-700 font-semibold"
+              >Username</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Input your username"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-700"
+            />
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="w-1/2">
+              <label for="password" class="block text-gray-700 font-semibold"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Input your password"
+                class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-700"
+              />
+            </div>
+            <div class="w-1/2">
+              <label
+                for="confirm-password"
+                class="block text-gray-700 font-semibold"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Retype your password"
+                class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-700"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="recovery-code" class="block text-gray-700 font-semibold"
+              >Recovery Code</label
+            >
+            <input
+              type="text"
+              id="recovery-code"
+              name="recovery-code"
+              placeholder="Type any unforgettable thing"
+              class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-700"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-green-700 text-white w-full py-2 rounded hover:bg-green-800"
+          >
+            Sign up
+          </button>
+        </form>
+
+        <div class="flex justify-center items-center space-x-2 mt-6">
+          <button class="bg-white-700 text-white rounded-full p-2">
+            <a href="">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 0C5.87321 0 0.5 5.51435 0.5 12.3152C0.5 19.116 5.87321 24.6304 12.5 24.6304C19.1268 24.6304 24.5 19.116 24.5 12.3152C24.5 5.51435 19.1268 0 12.5 0ZM16.9732 17.4172C15.8857 18.4453 14.4018 19.0501 12.6313 19.0501C10.0679 19.0501 7.85 17.5409 6.77054 15.3418C6.32589 14.4319 6.07143 13.4038 6.07143 12.3152C6.07143 11.2266 6.32589 10.1985 6.77054 9.28863C7.85 7.08674 10.0679 5.57757 12.6313 5.57757C14.3991 5.57757 15.883 6.24556 17.0214 7.33139L15.1411 9.26389C14.4607 8.5959 13.5955 8.25778 12.6339 8.25778C10.925 8.25778 9.47857 9.44257 8.96161 11.0342C8.83036 11.4383 8.75536 11.8699 8.75536 12.3152C8.75536 12.7605 8.83036 13.1921 8.96161 13.5962C9.47857 15.1878 10.925 16.3726 12.6313 16.3726C13.5152 16.3726 14.2652 16.1335 14.8518 15.7294C15.5482 15.2511 16.0089 14.5391 16.1616 13.6952H12.6313V11.0892H18.8107C18.8884 11.5318 18.9286 11.9908 18.9286 12.4664C18.9286 14.5198 18.2134 16.2434 16.9732 17.4172Z"
+                  fill="#017D34"
+                />
+              </svg>
+            </a>
+          </button>
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_199_174)">
+              <path
+                d="M16.5 0C9.8725 0 4.5 5.51362 4.5 12.3152C4.5 19.1168 9.8725 24.6304 16.5 24.6304C23.1275 24.6304 28.5 19.1168 28.5 12.3152C28.5 5.51362 23.1275 0 16.5 0ZM19.3425 8.51031H17.5388C17.325 8.51031 17.0875 8.79895 17.0875 9.18252V10.5192H19.3438L19.0025 12.4255H17.0875V18.1482H14.9588V12.4255H13.0275V10.5192H14.9588V9.39803C14.9588 7.78936 16.0463 6.48215 17.5388 6.48215H19.3425V8.51031Z"
+                fill="#017D34"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_199_174"
+                x="0.5"
+                y="0"
+                width="32"
+                height="32.6304"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result=""
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_199_174"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <button class="bg-white-700 text-white rounded-full p-2">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 0C5.8725 0 0.5 5.51362 0.5 12.3152C0.5 19.1168 5.8725 24.6304 12.5 24.6304C19.1275 24.6304 24.5 19.1168 24.5 12.3152C24.5 5.51362 19.1275 0 12.5 0ZM17.3813 10.0882C17.3863 10.1934 17.3875 10.2986 17.3875 10.4012C17.3875 13.6083 15.0113 17.3041 10.6638 17.3041C9.37912 17.3063 8.12121 16.9277 7.04125 16.2137C7.225 16.2368 7.41375 16.2458 7.605 16.2458C8.7125 16.2458 9.73125 15.8597 10.54 15.208C10.0471 15.1981 9.56959 15.0306 9.17389 14.7289C8.77819 14.4272 8.48406 14.0063 8.3325 13.5249C8.68644 13.594 9.05106 13.5795 9.39875 13.4826C8.86381 13.3716 8.38275 13.0741 8.03714 12.6406C7.69152 12.2071 7.50263 11.6643 7.5025 11.1042V11.0747C7.82125 11.2556 8.18625 11.3659 8.57375 11.3787C8.07225 11.0361 7.71723 10.5098 7.58131 9.90749C7.44538 9.30515 7.53881 8.67227 7.8425 8.13829C8.43619 8.88747 9.17658 9.50034 10.0157 9.93722C10.8548 10.3741 11.774 10.6253 12.7137 10.6745C12.5943 10.154 12.6457 9.60766 12.86 9.12031C13.0743 8.63296 13.4395 8.23193 13.8988 7.97956C14.3582 7.72719 14.8858 7.63763 15.3999 7.7248C15.9139 7.81197 16.3855 8.07098 16.7412 8.46157C17.2702 8.35416 17.7775 8.15504 18.2413 7.87275C18.065 8.4348 17.6958 8.91207 17.2025 9.21587C17.6711 9.15795 18.1286 9.02868 18.56 8.8323C18.2431 9.31965 17.8439 9.74496 17.3813 10.0882Z"
+                fill="#017D34"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <p class="text-center text-black-500 mt-4">
+          Already have an account? <span>Click</span>
+          <a href="./LogIn.html" class="text-green-700 font-bold"> Login </a>
+          <span>here</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -4,59 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CivicConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
   </head>
   <body class="bg-gray-100">
     <!-- Navbar -->
     <nav class="bg-white shadow-md">
-      <div
-        class="container mx-auto px-4 py-2 flex justify-between items-center"
-      >
+      <div class="container mx-auto px-14 py-2 flex justify-between items-center">
         <!-- Logo and Title -->
         <div class="flex items-center space-x-2">
           <img
             src="./assests/image/CivicConnect.png"
             alt="CivicConnect"
-            class="w-10 h-10"
+            class="w-18 h-18"
           />
-          <span class="text-green-700 text-2xl font-bold">CivicConnect</span>
+          <span class="text-green-700 text-4xl font-bold">CivicConnect</span>
         </div>
 
-        <!-- Desktop Links -->
-        <div class="hidden md:flex space-x-6 text-gray-700">
+        <!-- Desktop Links and Right Side Buttons -->
+        <div class="hidden md:flex items-center space-x-10 text-green-700 font-semibold">
           <a href="./AboutUs.html" class="hover:text-green-700">About us</a>
-          <a href="./AllReports.html" class="hover:text-green-700"
-            >All Reports</a
-          >
-          <a href="./CreateRequest.html" class="hover:text-green-700"
-            >Create Request</a
-          >
-          <a href="./AllRequest.html" class="hover:text-green-700"
-            >All Requests</a
-          >
-        </div>
+          <a href="./AllReports.html" class="hover:text-green-700">All Reports</a>
+          <a href="#" class="hover:text-green-700">Create Request</a>
+          <a href="./AllRequest.html" class="hover:text-green-700">All Requests</a>
 
-        <!-- Right Side Buttons -->
-        <div class="hidden md:flex items-center space-x-4">
+          <!-- Right Side Buttons -->
           <button class="bg-green-700 text-white px-4 py-1 rounded">
             <a href="./LoginPage.html"> Log in </a>
           </button>
           <button
             class="border border-green-700 text-green-700 px-3 py-1 rounded flex items-center"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21 21l-4.35-4.35m1.15-5.2A7.8 7.8 0 105.8 5.8a7.8 7.8 0 0010.9 10.9z"
-              />
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.0002 19.0001L14.6572 14.6571M14.6572 14.6571C15.4001 13.9142 15.9894 13.0323 16.3914 12.0616C16.7935 11.091 17.0004 10.0507 17.0004 9.00008C17.0004 7.94948 16.7935 6.90917 16.3914 5.93854C15.9894 4.96791 15.4001 4.08597 14.6572 3.34308C13.9143 2.6002 13.0324 2.01091 12.0618 1.60886C11.0911 1.20681 10.0508 0.999878 9.00021 0.999878C7.9496 0.999878 6.90929 1.20681 5.93866 1.60886C4.96803 2.01091 4.08609 2.6002 3.34321 3.34308C1.84288 4.84341 1 6.8783 1 9.00008C1 11.1219 1.84288 13.1568 3.34321 14.6571C4.84354 16.1574 6.87842 17.0003 9.00021 17.0003C11.122 17.0003 13.1569 16.1574 14.6572 14.6571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             Search
           </button>
@@ -87,34 +72,24 @@
         class="hidden md:hidden bg-white space-y-2 px-4 py-3 border-t border-gray-200"
       >
         <a href="#" class="block text-gray-700 hover:text-green-700">Home</a>
-        <a
-          href="./AboutUs.html"
-          class="block text-gray-700 hover:text-green-700"
-          >About us</a
-        >
-        <a href="#" class="block text-gray-700 hover:text-green-700"
-          >All Reports</a
-        >
-        <a href="#" class="block text-gray-700 hover:text-green-700"
-          >Create Request</a
-        >
-        <a
-          href="./AllRequest.html"
-          class="block text-gray-700 hover:text-green-700"
-          >All Requests</a
-        >
+        <a href="./AboutUs.html" class="block text-gray-700 hover:text-green-700">About us</a>
+        <a href="#" class="block text-gray-700 hover:text-green-700">All Reports</a>
+        <a href="#" class="block text-gray-700 hover:text-green-700">Create Request</a>
+        <a href="./AllRequest.html" class="block text-gray-700 hover:text-green-700">All Requests</a>
+
         <button class="bg-green-700 text-white px-4 py-2 w-full rounded mt-2">
-          <a href="./LoginPage.html"> Log in </a>
+          <a href="#"> Log in </a>
         </button>
         <button
           class="border border-green-700 text-green-700 px-4 py-2 w-full rounded mt-2 flex items-center justify-center"
         >
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.0002 19.0001L14.6572 14.6571M14.6572 14.6571C15.4001 13.9142 15.9894 13.0323 16.3914 12.0616C16.7935 11.091 17.0004 10.0507 17.0004 9.00008C17.0004 7.94948 16.7935 6.90917 16.3914 5.93854C15.9894 4.96791 15.4001 4.08597 14.6572 3.34308C13.9143 2.6002 13.0324 2.01091 12.0618 1.60886C11.0911 1.20681 10.0508 0.999878 9.00021 0.999878C7.9496 0.999878 6.90929 1.20681 5.93866 1.60886C4.96803 2.01091 4.08609 2.6002 3.34321 3.34308C1.84288 4.84341 1 6.8783 1 9.00008C1 11.1219 1.84288 13.1568 3.34321 14.6571C4.84354 16.1574 6.87842 17.0003 9.00021 17.0003C11.122 17.0003 13.1569 16.1574 14.6572 14.6571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.0002 19.0001L14.6572 14.6571M14.6572 14.6571C15.4001 13.9142 15.9894 13.0323 16.3914 12.0616C16.7935 11.091 17.0004 10.0507 17.0004 9.00008C17.0004 7.94948 16.7935 6.90917 16.3914 5.93854C15.9894 4.96791 15.4001 4.08597 14.6572 3.34308C13.9143 2.6002 13.0324 2.01091 12.0618 1.60886C11.0911 1.20681 10.0508 0.999878 9.00021 0.999878C7.9496 0.999878 6.90929 1.20681 5.93866 1.60886C4.96803 2.01091 4.08609 2.6002 3.34321 3.34308C1.84288 4.84341 1 6.8783 1 9.00008C1 11.1219 1.84288 13.1568 3.34321 14.6571C4.84354 16.1574 6.87842 17.0003 9.00021 17.0003C11.122 17.0003 13.1569 16.1574 14.6572 14.6571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           Search
         </button>
       </div>
+    </nav>
     </nav>
 
     <!-- Hero Section -->
@@ -128,10 +103,10 @@
       "
     >
       <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">
-          Stay informed about the government’s work
+        <h1 class="text-4xl md:text-7xl font-semibold mb-4">
+          Stay informed about the <br> government’s work
         </h1>
-        <p class="text-lg md:text-xl mb-6">
+        <p class="text-l md:text-l mb-6 font-semibold">
           View and monitor government reports and also create a request on what
           you want government to work on.
         </p>
@@ -145,8 +120,7 @@
     <div
       class="container mx-auto px-24 py-16 grid grid-cols-1 md:grid-cols-3 gap-6"
     >
-      <!-- Card 1 -->
-      <div
+        <div
         class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center"
       >
         <img
@@ -154,29 +128,29 @@
           alt="Report"
           class="w-full h-40 object-cover rounded-md mb-4"
         />
-        <p class="text-green-700 mb-4">
+        <p class="text-green-700 mb-4 font-semibold">
           View government reports and monitor the different projects and
           initiatives.
         </p>
-        <button
-          class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700"
-        >
-          View Reports
-        </button>
+        <a href="#">
+          <button class="bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">
+            View Reports
+          </button>
+        </a>
+        
       </div>
-      <!-- Card 2 -->
-      <div
-        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center"
+         <div
+        class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center"
       >
         <img
           src="./assests/image/submit request 1.png"
           alt="Request"
           class="w-full h-40 object-cover rounded-md mb-4"
         />
-        <p class="text-green-700 mb-4">
-          Create a request on what you want government to work on.
+        <p class="text-green-700 mb-4 font-semibold">
+          Create a request on what you want <br> government to work on.
         </p>
-        <a href="CreateRequest.html">
+        <a href="#">
           <button
             class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700"
           >
@@ -193,138 +167,146 @@
           alt="Weekly Updates"
           class="w-full h-40 object-cover rounded-md mb-4"
         />
-        <p class="text-green-700 mb-4">
-          Submit weekly topics for your official weekly newsletter.
+        <p class="text-green-700 mb-4 font-semibold">
+          Submit weekly reports on your official <br> activities
         </p>
         <button
           class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700"
         >
-          Submit Topics
+          Submit Reports
         </button>
       </div>
     </div>
 
-    <section class="bg-green-700 py-8 relative">
-      <div
-        class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
-      >
-        <!-- Card Example -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="./assests/image/HM-World-Bank1-scaled-qpnki4alvuyh3dd82lu3c3nnqy6skfdlai2jzvhkgq 1.png"
-            alt="Content Image"
-            class="w-full h-32 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-gray-800 font-bold text-lg mb-2">
-              Infrastructure Development
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Dr. Tijani ramped up his investment drive as he visited Estonia on
-              the invitation of the government to explore opportunities for
-              partnership and collaboration towards achieving our shared
-              prosperity. The visit presented a remarkable opportunity to share
-              ideas and take learnings on the challenges, benefits, and
-              resources required to build digitally connected soci
-              <a href="./ViewMore.html">
-              <button class="text-blue-600 underline hover:text-blue-800">
-                View more
-              </button>
-            </a>
-            </p>
+    <section class="bg-green-700 py-4 relative">
+      <div class="container mx-auto px-24 py-8">
+        <!-- Carousel Wrapper -->
+        <div class="relative">
+          <!-- Carousel Cards Container -->
+          <div
+            class="carousel-container flex overflow-x-auto space-x-6 snap-x snap-mandatory scrollbar-hide"
+  
+          >
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-72 snap-start">
+              <img
+                src="./assests/image/HM-World-Bank1-scaled-qpnki4alvuyh3dd82lu3c3nnqy6skfdlai2jzvhkgq 1.png"
+                alt="Content Image"
+                class="w-full h-32 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-green-800 font-semibold text-lg mb-2">
+                  INFRASTRUCTURE DEVELOPMENT
+                </h3>
+                <p class="text-black-600 text-justify text-sm font-semibold">
+                  Dr. Tijani ramped up his investment drive as he visited Estonia on
+                  the invitation of the government to explore opportunities for
+                  partnership and collaboration towards achieving our shared
+                  prosperity. The visit presented a remarkable opportunity to share
+                  ideas and take learnings on the challenges, benefits, and
+                  resources required to build digitally connected societies.
+                  <a href="./ViewMore.html">
+                    <button class="text-green-700 underline hover:text-green-800">
+                      View more
+                    </button>
+                  </a>
+                </p>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-72 snap-start">
+              <img
+                src="./assests/image/HM-and-PBAT-qo7451c90hzbo7ojuer4nw2jqkaevt6zfdwa8zpryy 1 (1).png"
+                alt="Content Image"
+                class="w-full h-32 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-green-800 font-semibold text-lg mb-2">
+                  DIGITAL TRANSFORMATION
+                </h3>
+                <p class="text-black-600 text-justify text-sm font-semibold">
+                  Dr. Tijani ramped up his investment drive as he visited Estonia on
+                  the invitation of the government to explore opportunities for
+                  partnership and collaboration towards achieving our shared
+                  prosperity.
+                  <a href="./ViewMore.html">
+                    <button class="text-green-700 underline hover:text-green-800">
+                      View more
+                    </button>
+                  </a>
+                </p>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-72 snap-start">
+              <img
+                src="./assests/image/FEC1-qrkmyz178hb12kyavj30aceqxiq4hk7ahzrjlrvxzu 1.png"
+                alt="Content Image"
+                class="w-full h-32 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-green-800 font-semibold text-lg mb-2">
+                  INFRASTRUCTURE DEVELOPMENT
+                </h3>
+                <p class="text-black-600 text-justify text-sm font-semibold">
+                  Dr. Tijani ramped up his investment drive as he visited Estonia on
+                  the invitation of the government to explore opportunities for
+                  partnership and collaboration towards achieving our shared
+                  prosperity. The visit presented a remarkable opportunity to share
+                  ideas and take learnings on the challenges, benefits, and
+                  resources required to build digitally connected societies.
+                  <a href="./ViewMore.html">
+                    <button class="text-green-700 underline hover:text-green-800">
+                      View more
+                    </button>
+                  </a>
+                </p>
+              </div>
+            </div>
+    
+            <!-- Card 4 (Partially Displayed) -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-72 snap-start">
+              <img
+                src="./assests/image/Dr Bosun Tijani 2.png"
+                alt="Content Image"
+                class="w-full h-32 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-green-800 font-semibold text-lg mb-2">
+                  DIGITAL TRANSFORMATION
+                </h3>
+                <p class="text-black-600 text-justify text-sm font-semibold">
+                  Dr. Tijani ramped up his investment drive as he visited Estonia on
+                  the invitation of the government to explore opportunities for
+                  partnership and collaboration towards achieving our shared
+                  prosperity. The visit presented a remarkable opportunity to share
+                  ideas and take learnings on the challenges, benefits, and
+                  resources required to build digitally connected societies.
+                  <a href="./ViewMore.html">
+                    <button class="text-green-700 underline hover:text-green-800">
+                      View more
+                    </button>
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Repeat additional cards -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="./assests/image/HM-and-PBAT-qo7451c90hzbo7ojuer4nw2jqkaevt6zfdwa8zpryy 1 (1).png"
-            alt="Content Image"
-            class="w-full h-32 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-gray-800 font-bold text-lg mb-2">
-              Digital Transformation
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Dr. Tijani ramped up his investment drive as he visited Estonia on
-              the invitation of the government to explore opportunities for
-              partnership and collaboration towards achieving our shared
-              prosperity. The visit presented a remarkable opportunity to share
-              ideas and take learnings on the challenges, benefits, and
-              resources required to build digitally connected soci
-              <a href="./ViewMore.html">
-                <button class="text-blue-600 underline hover:text-blue-800">
-                  View more
-                </button>
-              </a>
-            </p>
-          </div>
+    
+        <!-- Floating "Go to page" Button -->
+        <div class="flex justify-center mt-8">
+          <a
+            href="/nextpage"
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+          >
+            Go to page
+          </a>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="./assests/image/FEC1-qrkmyz178hb12kyavj30aceqxiq4hk7ahzrjlrvxzu 1.png"
-            alt="Content Image"
-            class="w-full h-32 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-gray-800 font-bold text-lg mb-2">
-              Infrastructure Development
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Dr. Tijani ramped up his investment drive as he visited Estonia on
-              the invitation of the government to explore opportunities for
-              partnership and collaboration towards achieving our shared
-              prosperity. The visit presented a remarkable opportunity to share
-              ideas and take learnings on the challenges, benefits, and
-              resources required to build digitally connected soci
-              <a href="./ViewMore.html">
-                <button class="text-blue-600 underline hover:text-blue-800">
-                  View more
-                </button>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="./assests/image/Dr Bosun Tijani 2.png"
-            alt="Content Image"
-            class="w-full h-32 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-gray-800 font-bold text-lg mb-2">
-              Infrastructure Development
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Dr. Tijani ramped up his investment drive as he visited Estonia on
-              the invitation of the government to explore opportunities for
-              partnership and collaboration towards achieving our shared
-              prosperity. The visit presented a remarkable opportunity to share
-              ideas and take learnings on the challenges, benefits, and
-              resources required to build digitally connected soci
-              <a href="./ViewMore.html">
-                <button class="text-blue-600 underline hover:text-blue-800">
-                  View more
-                </button>
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- More cards if needed... -->
-      </div>
-
-      <!-- Floating "Go to page" Button -->
-      <div class="flex justify-center mt-8">
-        <a
-          href="/nextpage"
-          class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-        >
-          Go to page
-        </a>
       </div>
     </section>
-
+    
     <footer class="bg-white-800 text-white py-10">
       <div class="container mx-auto px-14 grid grid-cols-1 md:grid-cols-3 gap-14">
         <!-- Contact Section -->
@@ -398,7 +380,7 @@
 
           <span class="text-green-700 text-2xl font-bold">CivicConnect</span>
         </div>
-        <p class="text-gray-700">
+        <p class="text-gray-700 text-4xl">
           Federal Secretariat Complex Phase I, Annex III,<br />
           Shehu Shagari Way, FCT Nigeria.<br />P.M.B. 12578
         </p>
@@ -448,6 +430,49 @@
         </p>
       </div>
     </footer>
+
+    <div id="chatbot" class="fixed bottom-4 right-4">
+      <button class="">
+        <svg width="207" height="230" viewBox="0 0 207 230" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g clip-path="url(#clip0_916_1047)">
+          <rect x="-22" y="27" width="273" height="177" fill="url(#pattern0_916_1047)"/>
+          </g>
+          <defs>
+          <pattern id="pattern0_916_1047" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_916_1047" transform="matrix(0.00174638 0 0 0.00253807 0.214781 0)"/>
+          </pattern>
+          <clipPath id="clip0_916_1047">
+          <rect width="306" height="230" fill="white"/>
+          </clipPath>
+          <image id="image0_916_1047" width="500" height="394" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAGKCAYAAAD6/rM7AAAAAXNSR0IArs4c6QAAIABJREFUeF7tvQncHFWV/n+6+93XJCSB7CCEQEBlUbYgjgKCMIrsijisOjogoyiKy2h0RHHjM4MwOj8hcUMHZRvUGUHwryLrADIiSyAiZCNAEvIm795L/efcqlN963ZVb9X9vlXVT7l03u5a7v3eW/XUOffcc1OEDQRAAARAAARAIPYEUrGvASoAAiAAAiAAAiBAEHR0AhAAARAAARBIAAEIegIaEVUAARAAARAAAQg6+gAIgAAIgAAIJIAABD0BjYgqgAAIgAAIgAAEHX0ABEAABEAABBJAAIKegEZEFUAABEAABEAAgo4+AAIgAAIgAAIJIABBT0AjogogAAIgAAIgAEFHHwABEAABEACBBBCAoCegEVEFEAABEAABEICgow+AAAiAAAiAQAIIQNAT0IioAgiAAAiAAAhA0NEHQAAEQAAEQCABBCDoCWhEVAEEQAAEQAAEIOjoAyAAAiAAAiCQAAIQ9AQ0IqoAAiAAAiAAAhB09AEQAAEQAAEQSAABCHoCGhFVAAEQAAEQAAEIOvoACIAACIAACCSAAAQ9AY2IKoAACIAACIAABB19AARAAARAAAQSQACCnoBGRBVAAARAAARAAIKOPgACIAACIAACCSAAQU9AI6IKIAACIAACIABBRx8AARAAARAAgQQQgKAnoBFRBRAAARAAARCAoKMPgAAIgAAIgEACCEDQE9CIqAIIgAAIgAAIQNDRB0AABEAABEAgAQQg6AloRFQBBEAABEAABCDo6AMgAAIgAAIgkAACEPQENCKqAAIgAAIgAAIQdPQBEAABEAABEEgAAQh6AhoRVQABEAABEAABCDr6AAiAAAiAAAgkgAAEPQGNiCqAAAiAAAiAAAQdfQAEQAAEQAAEEkAAgp6ARkQVQAAEQAAEQACCjj4AAiAAAiAAAgkgAEFPQCOiCiAAAiAAAiAAQUcfAAEQAAEQAIEEEICgJ6ARUQUQAAEQAAEQgKCjD4AACIAACIBAAghA0BPQiKgCCIAACIAACEDQ0QdAAARAAARAIAEEIOgJaERUAQRAAARAAAQg6OgDIAACIAACIJAAAhD0BDQiqgACIAACIAACEHT0ARAAARAAARBIAAEIegIaEVUAARAAARAAAQg6+gAIgAAIgAAIJIAABD0BjYgqgAAIgAAIgAAEHX0ABEAABEAABBJAAIKegEZEFUAABEAABEAAgo4+AAIgAAIgAAIJIABBT0AjogogAAIgAAIgAEFHHwABEAABEACBBBCAoCegEVEFEAABEAABEICgow+AAAiAAAiAQAIIQNAT0IioAgiAAAiAAAhA0NEHQAAEQAAEQCABBCDoCWhEVAEEQAAEQAAEIOjoAyAAAiAAAiCQAAIQ9AQ0IqoAAiAAAiAAAhB09AEQAAEQAAEQSAABCHoCGhFVAIFmEVh59XWWnHvO7Jnqn69seVV9rrzkQjw/mgUe5wWBOgjghqwDGg4BgVYgoIu51Ld3cJCW7bFQ/fnoY09A1FuhI6COsSEAQY9NU6GgIDB1BFbd8ktr3YYXKZvOeC56+luP8Px92133QNSnrllwJRAoSwCCjg4CAiDgIcCWOVvi23cOq+93Do9Sflk/7b6jm84/9Xjq7uigsclJ+vPaF+jmX/2Orr78IjxH0IdAIAIEcCNGoBFQBBCIEgFxtYt1vmlu3i3eefu9md6wdLES9FU3/0p9f9k5p+M5EqUGRFlalgBuxJZtelQcBPwJXHLltdaieXOVha6LOWVSRHmLFlM3vTo8Qv2j7TSjv49GhobgdkdnAoEIEICgR6ARUAQQiBKBEkFnIXe2DKUoT07ge96i+S9nlEsebvcotSDK0qoEIOit2vKoNwgEEGBB7+/roe0LMjSanbT3yqSoJ91u/+1Y6vw1C/oVF5+H5wh6EwhEgABuxAg0AooAAlEj8PXv/8wqcbk7ws5u90wmTfl8gZaPDWIMPWqNh/K0LAEIess2PSoOAsEExErnPTbNK7g7mlb66jOQXAb9CASiQgCCHpWWQDlAIGIEONqdI905MK6nvcPjfmcrHWIesQZDcVqeAAS95bsAAIBAeQKfuWa1ioJzI94zKVp96gV4dqDjgEDECOCmjFiDoDggAAIgAAIgUA8BCHo91HAMCIAACIAACESMAAQ9Yg2C4oAACIAACIBAPQQg6PVQwzEgAAIgAAIgEDECEPSINQiKAwIgAAIgAAL1EICg10MNx4AACIAACIBAxAhA0CPWICgOCIAACIAACNRDAIJeDzUcAwIgAAIgAAIRIwBBj1iDoDggAAIgAAIgUA8BCHo91HAMCIAACIAACESMAAQ9Yg2C4oAACIAACIBAPQQg6PVQwzEgAAIgAAIgEDECEPSINQiKAwIgAAIgAAL1EICg10MNx4AACIAACIBAxAhA0CPWICgOCIAACIAACNRDAIJeDzUcAwIgAAIgAAIRIwBBj1iDoDggAAIgAAIgUA8BCHo91HAMCIAACIAACESMAAQ9Yg2C4oAACIAACIBAPQQg6PVQwzEgAAIgAAIgEDECEPSINQiKAwIgAAIgAAL1EICg10MNx4AACIAACIBAxAhA0CPWICgOCIAACIAACNRDAIJeDzUcAwIgAAIgAAIRIwBBj1iDoDggAAIgAAIgUA8BCHo91HAMCMSEwMqrr7O4qHNmz3RL3N3VNe2lX7fhRVp5yYV4/kx7S6AASSKAGypJrYm6gIBGYNUtv7RYOHsHB2lkaMj9ZdvoBM3q6aR6P8NAPuiA/Wjx7Fn06NNrCaIehiSOBYFSAhB09AoQSCABtsxZyHnbvnO4YTXcOTxK/X09VO2n34Vn9PfRsW98Hd121z2w0hvWMjgRCBBB0NELQCCBBETQWcxZQEXUN83N0/yXMzRdny/OytK8be103N+soO3bttKjjz0BUU9g/0OVpocABH16uOOqINBUAqaFvn1BhkYLWaK8GlIPt2VS9nkqfZa5yvKxQTr04NfTTb/4NV19+UV4DoVrERwNAooAbiR0BBBIIAEeP9+6c1TV7PmBMfU5mp0sijB/UUmQ/X4Py8p5oUjlCnTMLnvTA398AoIelimOBwGHAAQdXQEEEkhABJ1d7WydK0EXC52FOuTWk25XLwg97R3ui4Lfd57LOFa97Meufx6Lh4UesjFwOAhA0NEHQCC5BPwsdI+VLlWvxnXuWOq6eJeQk/PoPwR9p+3T/9wEBD253RA1m2IC4V/Vp7jAuBwIgEBlArqgi5WuLHRTyCufqvQY8yUg4BwZSlE+X1Cuffl3JpOmPDnj+HmLIOi1NAD2BYHyBCDo6CEgkEACust9fI8uGp/MlrjcxfXNgqv/m3GYfwuiSvuZv/uJujt2TwRBT2DfQ5WmjwAEffrY48og0BQCklAmm7bHznmKmtr0sXOJdtcD33gXzapWh2hxs2Jty/fl/uYoeGWN5wv2p2OVeyz1fEEJ+rqNG+m2b30Zz6Km9AactJUI4CZqpdZGXRNFgKembdy0WdVpwfzdaPHCeTQ2Pk6vbHlVZYHjBDB+Yq5EVXN7i9B7vvcRd4Hnu5+cTzvOT8h19zufjwPjeGsvOC8dzkW4/AiWS1R3RWWmgAAEfQog4xIg0AgC77/8S1b3jJkqbStvItr8b44Wl3SuLOQey5xd6Fo0um4969/rQi3/rvdTFUCz0l0hJ6voBXCgiKgLI64Lb3o9x7a/St+98rN4XjWiI+EciSWAGySxTYuKJYHAJVdeqyLITLHWxU8EXK+va5nrX4rLXYRWs6olUYzpEve4zcV9XuaTL8fHKD0X8dZFXALk+NpakhuZwuZXF/2FRaqDhV2S0LtRh0YTgKA3mijOBwINIHDtj2+22HXOm26Ji7iJO921sAOuaVrmJVPPNHE3I9Hrtc49x+lR7pqwmy8KqvjaC4ekp+WMcvsu20v9/PBDjxDHBYg3AuLegI6GUySKAAQ9Uc2JysSdgAS0cT0kqE3qJFZ3JRHXhdEjlMpstlO2SrCbb7CaHsBmWtnV/m0IuV+QnBuAZ4i5RMFzPT/2NyfRYLtt8a9ft4l+9pv7PE0sY+8Yc497z0f5G0EAgt4IijgHCIQgwMFtekCbuUqam+mNU7f6bLrA+yV/caeSOe5wJeKasPvOFa/CvR7kjjfHy9V7hBbtrnsC1G/aS4JevdfOXUjnHXwkdbe3U8Gy565f8f9+7O7it+Ib/4hguhCdEYfGmgAEPdbNh8LHmYC41efMnqki03UhlxXSRMy5nioXux7gplfemH7mmQ8eJN5+U8kaYZ2brvWAKWu+CWe0pDW79g/QZW96O/V3dauabtg5Ql+886eUarMtdhmD14PqJKAOwh7nOwNlr5cABL1ecjgOBEIQYNc6TzEbzRY8Z5HlTmVBFfmRs7wpkdazvcmPecuOYpff9DnmjvCZlrsZ/GZOXas74t1xtbuVCoh0l9/N8XZzOGHJzF3orfP3J7IsuvHZB4oLzGiCLucyhV0CCWGxh+ioODRWBCDosWouFDbuBETIbYvbK+b8HQt5V0e7yuwmn3qdRbSDMrmx1eoRd0309cQyvgFvfmlaa3C9mxa30tyAMXe3WNr59dXfSlLFmnnhtYVeDl6ylOZOdtHLHePU9coEbdz8ilr/XXfJQ9Tjfueg/NUQgKBXQwn7gEADCJQT861zLcoW8tSezqhP3ljUTTEPtNL1dK18kBMxrgu/aQ3LGLjHOvfL7FZtIJzsVyhQJq3lbOd1mp0xcKmP+jNdDM7zFX/zZcIca89b9Ka99qO37/N66iKL2tvaKJvLUaFQoKFsgZ5c8xw9tWatEncOnkPgXAM6MU4RaQIQ9Eg3DwqXBAIs5FwPdrH7WeYj89toPGeLt4i5CLpppfu53Eus9TKLpwROKfMTch9h9msPU6yrbTMr5Tx+zDSx7CnQ5rN7xF4vZ96ifzziRFq+2xxqSzvj6kSUK9jH5wp5GpucVNHxv/6fP9HI0JD6HnPYq20h7Bc3AhD0uLUYyhsrAiLmIujdXV20deco9fV20dZZFuXyeVfMpWIi6vlCgbK5fInr3TOe7rdEqbG4iu/8cm2sWx8vTxUs0tK3TwlrJezGWLsSdHO1Np957O9cfiCdtPzAknKaos47sLDfdtc9al9Y61PStLjIFBOAoE8xcFyuNQjIVDS9tiLk/J2IOf+7QBZN5nLurrqVLqKun8c3QE63ypUaGtavX7Y2Y/y6Xku7ES3qEfVqXfz5AnHQ3OePeZenCJbj3g8S9UefXkvrNrwIa70RDYdzRIoABD1SzYHCJIGAbpVLfSYcN7CIOX+yda4LekdbmyvsuqhP5Itiz/vz3yxW5nh6UGY319r1EUrXMiarZJx7qtuixAWvT3crFEg89Pr4O7/wrDzmXbR4xi5VizrveMe9j9Aza9ZC1Ke6kXG9phKAoDcVL07eagSCxHywv5+ea99BPe2dNJqdUFhE0P2sdP7OT9QtZ0raJOXdseKgNcd9g+CcpDLm0qbTaZ3rfcQVdefLasq1YslSOv8NR5V0NdNSV8ydcXWIeqvdma1RXwh6a7QzajkFBHQx7+rtda84tHMnje3aoYRcF3Q/K10vpj6WnrOKU9xE1HlfT5CcvuiKkUxGljJ1x8u1fasRzSnAF+oSnz+61ErnE4qo22LuDZbj71bd/Cs3WI7/RsBcqGbAwdNMAII+zQ2AyyeDgIj57NmzaMuWbcSCzkLOlvnmHtsi9xN0U9T5bxlP1y10/l5c7yzobKHLxkLllwhGd6f7WfGpYmB47Bth2ezd6BNvPtG3HuVEXc8Pz/PWsUxr7LtCS1cAgt7SzY/KN4KAn5jLeUXM5e9qrPSgsXQeLxZL3XS9+y62YqRxVWUQy1wbk24Egyic492vO5SOXbp/1aJuW+15uvyq60iWbWVR3zE0RN/7yqfxbIxCo6IMNRFAp60JF3YGAS8BXcyHx2xLPEjMdVE3OU5qgW9soYuoB1npfDxb7B2UUda6VbCKWdl8FkLRs7jxv5PgZjcZ9rZ30j8dfRLN6e2vKOq2mNsu+Gvuv5sef3G9+nf/c3YbQtRxp8eRAAQ9jq2GMkeCAIs5u9h5M8V8fE4nbR/ZQTN6B9SnuflZ6qao68eIsJsR72ypB+V5193wSbbMdU7lXO+yn+mC/9rv/4v+suVl9TOnzc2s2QlRj8QdhkLUSgCCXisx7A8CHEzliDmPl7Ooi6APDA7SM9mXA4Vc4Emkuw5TF3T+Pmhuui7q+ng6W+m8yfKoJZHs05A0Zjo6yzv35WQzB5W9tC7qn77jJnppp/3SJYvD8EIv7H5HDvjpaEFcs14CEPR6yeG4liWgW+YCgQWdxZxdtbp1Pjw2TH3dfb5WOh9rCnuQlW4mmzGj3iVILsj1nkQXe7kOePHhx9CB85dU7KPrtm+llb++jdy89toR4n6HqFfEiB0iQgCCHpGGQDHiQYAzwB10wH6ewppiLiLOn/omY7Yi5OYUNmWVG0lkymWQ8wuQU4JujqEnMACuUm/h8fSPH/X2koQz5nHXPnA3PbZpXZGZk0eeLfUZG/PKSucNol6JOH6PAgEIehRaAWWIDQHTOk93dCmrnK1zXr6zaLHblrluofMCIrqoBwl7NQFyesQ7n0cPkJNr8Bh6QZu/HhvIDSpoJVG/74Vn6fqHf0/pVNoVdL40vxDJJmusw/3eoEbBaZpKAILeVLw4eZII+Ik510/c7PxvXo+bXe6mlS5u9yBR1zllU3mycvZ4uG6h89+Vot7lPMpSb0HL3OxvLOrnveFNJe53EXPen7PTlaxC54yns5UuGy/BisQzSbqjk1cXCHry2hQ1agIBXcwXz55F67ZsU1dhC5033TqXy+ey49TW3qXEXd+qcb3rom4Ke2AGuYJFk5YtQCzorWydm12Ao9+XzZmnvl7zyou0Zstmzy5ipXum9zl7wEpvwg2FUzaFAAS9KVhx0iQRuPbHN1uLFs4nPyHXrXOPaGeL7nf5fjyXo7ZMmnL5gsf1XqACjWft9dD1rdYAOWWVWwUV5c7/tixexw1bNQR0K52n+Lmr1fHBTv58RL5XQxL7TCcBCPp00se1Y0FAt87FItcLztb53Mku10pPF3JUSLdRITdBBVnK0xnLZjHnTbfSWdDTlFYR713t7Urc2UJP5eylVdX++bx7Lv47yErPF/JUYOucRd1iKx2SXm0n08fS1dQ/2fIWiZXOX8H1Xi1R7DfVBCDoU00c14sVARFzsc4HB/pp53jRmmYxn9nRQa9OTlJvJk0j+QJ1j2dptN2iVKbDI+ossiywpqizoPNWyUrXRd1vGlvKYmOyoK7BYp5XYg5Rr6XDedZl12YLqHM4wo4AuVqIYt+pJABBn0rauFbsCLCgH7TPXmrM3BRzZSnPIhobm3CDqsbzFrVTQQWk2RpQ8FjKPNWMBZetaLHURdDV+XL22ue2GJOy1CVArpyVrs7F11LWOV+z9Nqxgz8NBZblW2UxG3N+OsbTp6FRcMmqCUDQq0aFHVuNQDnrfKC/j9ZObFHWuT7WXXAWULHYMuZxbMdCZoEXC125wZUF7Yh+gV3rBcrn7YA2/l0XdNP1LvuIlS6udbmmeolwrg/Xe+291mOlk2W/rPlMZYPrvXa2OKK5BCDozeWLs8eUgCnm7HLfsGOUBvp6acfwCGX7CkQdaaJJW5RF1O2ANMcKF2vccYEry9wReLHS+RsRb+Uqd48tijpb5krEnXHxrPO3suD/byoVb7aLvWj9y4uE/n1Mm2Jaiu3neu9Mt9FodtIdT4frfVqaBhctQwCCju4BAj4EdFe7KeZsnW+1iguu5JypYmyRu4IuQWmalS6WtLjd2Upnz7uIuinotoDbYq0LNxeXLX5x5/MLwatDO2l0eIRyY5OqNtv++pL6HHfKJlUc3T5MIztGamrzl5+3z2Vuc+bNplRnpqpz9Q70Us+MvpJ9+2YNUFe/PfWPt9mLd63qfM3eSVzvnus40e78HVzvzW4BnL8eAhD0eqjhmEQT0K1zrqhY5vxvts7TM9I0kS5QOqeNhTvCyUIrwq2scDWG7h3P9nO9syhLRLpppctCIizqO4aH6MU/raeXx4dp+9ObafMrW2l0ZFRZ9ql02m0X/ps3+U7+bmTDFTQ3dCPPy+fabfFu1DHYTTPmzqT5r5lP/QtnT/mSr56od65rRntcIkCu0U2O8zWAAAS9ARBximQRMK3zHYXibcKC3j6rzbWQxXXeTCv9pb9upj//6Wn6y9N/pa0btlQNuxEiLiu4VX1Rnx1VeF/I6XPtXR2062vm0cJ9FtPC/XYn/nsqNt31zteTlez433q+d+R6n4rWwDUqEYCgVyKE31uKgGmdD01mKdVWFI/htjHKpNMeQWcLmvWKRV0C4fysdB7XVsFxxli6BMjpY+k7X9xGv773IfrrI2tp6JVtLZUgZsUhB9ORbzyA/vepNfTkmudo/cZNJfVfuHyJEvc9Dt67qf3Tdb3nLbUimxJ1I0AOY+lNbQKcvAYCEPQaYGHX5BMQ61xqqlvnIubqoe64tNkNLi5xdq8r17kzbi6iroLVfMbS/QLk/rLmBbrn53+gp59aq1zMrZgWZqC/l7571T/T3x55KKVSKVr78ma6595H6e7f3UO3/Op3nk7YP6Oflhy4J+1z5GubZrUr17tEu0uLaNnjuEAQ9eQ/G+JQQwh6HFoJZZwSAqaYe6zzlH2rjLXbKV09UeVuFLsWse7kUrfH0Z3pa2WmsT3z1HN0902/peeee96ua0gX9ZQAa9JF5KF0xCEH07e/8Rnac44dKCfifsONv6Sf3PbfHsudXfDLDl/eNGEvcb3DSm9S6+O0YQhA0MPQw7GJIhBonTtiPtlpR5B7A9/s5KySnS3ISpcAOVfgHaHftGM7/eEHd9O9Dz3CitXSQm52Jnk4feKiC+jD559JM3t6lajLtvrW/6KvXrOqRNgPPuHQprjiRdT5+ux+l2lsMpZ+xcXn4XmaqCdC/CqDDhi/NkOJm0TAV9AdAcl1O3PBVa50W8R1K704Zh5gpftMY7vzv35Hv/3572nHztqmkZUIH5cx5Uwfs4pDAE3C1NDTKoEuU3Z5QC1aMJ++vvLjdOKRh6j1y/Xt335yC33xqm97OM7dYzc6/JSjqGdWf8PKW7KAi3bm5WODNDI0hOVVG0YbJ6qHAAS9Hmo4JnEETDHnCu6w0jTQ2007RsYo1VOgrBofF2EvBrfpAXD2v/3H0sVK3zkxTtd//Ye05sln6xoj5xzxqXQbpTNtZduhkM+RVciRlbc9C1HYwpadA+bEDc8vAxK/8JdXXqIPffwKuu+hR1ym7IZvtLWuL7Nqu2vshVt4DJ03RLtHoZe1bhkg6K3b9qi5RsBP0KmnV4l5e1+KcoW8EvSUK9ZFK910p8s65BIgpyebWfvs83T91TfStldeqUnMWbxYDNNtnXW1G6/8xsIuAljXSeo8qJFl5wdWf38vfe7SD9GH3n2yxwXPxfvCt66nr117vYftHgctpcNOParO0pce5rcqW0+6nWZszGMltoZRxonqIQBBr4cajkkcgdt/f7/FGeHczRFzttDHUuNK0EW4bcOMrfXarPTf3/0Aff+7P6tZVEXI9fHjehpATa/LT6oV4KZqa2bZTWtd6vSbhx+lsz70SWU1ywvMjDmz6JgPntiQSHjd9a7necd66VPVq3CdIAIQdPSNlicQZJ0zGBZz3ljQbSG3M8GJoMtYemnQm5bStWDRb++6ry4xT7f3KPd6Izflhs+N1fxiUWsZml12sdb1KW5Sxv996hk67u8uapqoe1zv2hQ2TF+rtZdg/0YSgKA3kibOFUsCJYLe0+vWQwSd3ej6FDRT1PVlUs2I99/ceS/94PqbqJZUqcpN3dZNqXT5XOlLFs6mebt685+/+NJL9MKGrWot9KDN4vnzTRL16Sj7Ry48i770sX/wBMz5iTqPq59w0btCB8uJlS58JdkMrPRYPgISU2gIemKaEhWpl4Dpbh+YtxvteHEz8Ri6CDqfWxf1YuCb/1i6WO6/efARuu6rq2sfLy8j5jMGuuicd59Mx73lSNpvn718q/3E02vpwYcfo+/deGuguDdD1CuJeTPLzi74G7/9FZrVW1wEppmWurkiG1LB1nsH4rhGEYCgN4okzhNbArqg9+4yQCNjtnudt4m0Pd5c4lJ3pqGZrndZwpQt+Ltuv5+uW/2jmsScr8WBbzz27Lf94wfeQxe89xQaHBhQPw/t2EFPPv0sFbJZGh6boIGBPlq+z1LP79ffcAt9/z9upe07uC5eq73RY+rTWXZ+mPH0thuv+TK9ft9iSthmiXrQNLb+5yYQ7R7bp0G8Cw5Bj3f7ofQhCZjudlPQs5lJlm7K8zqn+lrm2vQ0JfhGgNya59fRVz97dc1zzIMi2dmy/fG/f9O1yH91x110489uozvuvNuXwBGHH0KnnXISvfvMU9TvbLGf9fcf8xV1iYAPiTIwCn+qy86pY+/4wbUeUf/5PQ/Qme+/1FNFzgf/pvceE6raMifezO+OJDOhsOLgOglA0OsEh8OSQUC3zhctnk/r120iEXWrg3OwS3S7ncJVpqTlVHIZXpSlNEDu1dER+tonv0ZPv8DriFefjV3c1SbZmTN6XTFfv34jffTjn6b77n+oqgZgYV/52U/Q/q/dT1nz73jvh+j5dS+psXl2ucsWdjw9amXXRV0i3b94zaqSKW0HHn8ILTvqdXUvzaoy9KZTJNHu7HbffUc3rX/xZVjpVfVQ7NRIAhD0RtLEuWJHwM/d3tudUW53FnTLiWpnMWcR97PSudK66331qpvoP2+9s2YWknTFPPC/b/yOssz//PgTdPpZ59PQ0I6azj04OEA/+/EqJepiqb+6fcQr6rxSXIjpbFEt+7Vf+Sydd/IJLq9j/+7DnuQz/MOJ//CuUOutu673fIFSuQLN29aOxVpq6qHYuVEEIOiNIonzxJJAiYW+ZYhE0NOdBSXikgk1Nkm3AAAgAElEQVTOz/VuTmN74vE19OlPf7NmFkEW7kc+eDZd+qFziS3zt51wSkUxX77fvnTEoW+knTt30r33P0gbNmxSZdFFfdWPbqKVX/9OSRnrtdKjWnZ5uP38R9fQW99wkKovr9x25InvK5nOdvxHTwlnpVt2fnd2vSPSvebujwMaRACC3iCQOE38COjj56a7XYm6kzK1OA2t6HaXKWyykpq43s8991O0bcuWmud481xzMxBu98W70s9v+LYKcDvtzHMqutlXffdbdPxxxTFhdrGv/MKVdOPPblWNw2J/13/fov591Dveq1zv+qYyyRVyNTdklMsuc9X1MXXO/f7xL3zDU88wrnfdQqdMSqWDRWBczd0IBzSAAAS9ARBxingS8LPOBwb7KT85qlzubV0i4BwUZ89DLxcgd8NPfk4//uFtNYyaF7n5uaxXXvZBOv/s0+g/bryFLr3sM2UhX/qRi+jjl17su88xbz+FnnziKfXbVV+/QgXK/fTWX9DHV/6Ld/863e5xKLs5pv62cy4pyft+0mVn1p1JzpMO1rHSERgXz+dCnEsNQY9z66HsoQiYgr5tZFgJOVvnvI0VsurTXPK0aJ0Xk81sHx2mD5x7ec1R7VIBzqpmbvf+6ke0aN5upAtyUIUfvPcuWrRoge/PPHXuc5+/Qv0mVvr6FzfTiuPPLtm/kLUXGalli0vZFy+YT/fd/j01T53Tw77j7Is9L1/7v+UAeu0xB9dSdXdfNSedt7xFEhh32Tmn4/laF00cVC8BdLh6yeG42BMQQRd3+/xF82ho1F7KdCRL1N5uL0Wqu9fVWug+09i+f8NtdMMPb6ubibnoyu5L5tPvf36Dikzfd/9DK5530zrbAvfb7n/oETr1tKJ4i/i//Yy/pyeefsZzSD0LuMSp7Acv34v+84f/pkT9A5+6gn506y/d+nMWuTBWur5eOpZTrdhlsUMTCEDQmwAVp4wHAV3Q2To3t0ly8rfLHHN2uRsCL9PYzjz743WNnfM1ZTUy/fqHH3Ig3XjdVXTvvQ/Q6e85ryLQm2/6ER1+iL91+Y2rrqGr/uVa9xw/+8lqWrHiMDrzwkvp/of+GErQ41j2s08+kf7fVz6jAuRef9QpHis97Fg6W+iIdK/YXbFDkwhA0JsEFqeNPoHHnlyjJon7Wej8fTbFAl6Mcjdd7zKN7Q+/fYw+/+Wr6ho7DxL0008+nr75hU9WNX7O5zjubUfT6uuuKYHOFv5hK471RMfLePtV3/4e/cu3v99wQY9D2WU6mzmNrX9GP/3tZWfU1XndBVuIEOleF0EcFJYABD0sQRwfWwK6oLOFnunoUQFxsuVTnDQmWNBt13uB/umz/0r3/s+jRCrLSO2bn5V7wftOp89f9g8qdayMf1c6M4v6v1z1ZTft6xNPPUv/eOkn3YA4Ob7Zgh71sstD775bv0ePPr2WLv7UlzwvY0dfeALN3WNeJdwlv5srsCHSvWaEOCAkAQh6SIA4PL4ETEHv7eqikXF7udRUJl2yZKpnqprmev+bY0uDy2qhotY5T7d7Djni0INqcrnrB3Pg246hIXcOulkWmd52wUc+Q3fefa/350K2pil3cS47B8n94ifXKLc7b/I6tuyw5XTQOw6vpQnt47XAOP4bgl4zQhwQkgAEPSRAHB5fAiLoXAN2u7OVLqLOgm7lC2Ra6bwvC7tMY/vDQ4/WlUjGpGbOQX/t8qX0Xzd+VyWUOXRFuHzj5rXu/OVNKmscj6Hf98DDRKl0cZcaBd1++fEuJBOXsvPD76Dle9EjT671IArjdtfnpEPQ4/tsiGvJIehxbTmUOzSBIAtdXO8s6hzTzguvBLnev37N9+j2235dk1XrV3C/1dXuu/M/qp62Vi2MhQvn00P33a2i5/df8c6SwzjKvdYtzmUPqutJHzujrjXT9Uh3CHqtPQn7hyUAQQ9LEMfHkoCZJW4ib2dIY5e7bqWbgi4WurjfP/SPX6LHH3+i7oA4gcfZ1sztC5dfUnVimWobQcbPVWKZz3/T+yLC8QJ1ZoqLa9mDuB12yptoj4OLS7BWy1cPjIOgV0sN+zWKAAS9USRxnlgR0KesiZhLBVjUOzraKZvP2yuqOcuj+lnpK976nobUW41Fp+yENrItmjeX7vv1TerPQ444Wo2J8/j3fff/D1236gc1X5et81//6lYVNHfmuR+m+x7+X+85LHvefa1bnMseVNcw4+iy8hoEvdaehP3DEoCghyWI42NJwE/QWcj7u7uJBZ7HyHlTlrjjdldrrWlR70/89Xm64LxPhrbO+Tp+osjff/OfP0FnnPy37kprhx36Rlq/cZMbuc4iveLwQz0LsQQ1iIyds3X+sc99g8iy6+huDRT0uJQ9iNXcPXajoy88sfa+bdmTHXguet+6LJZQrZ0gjghBAIIeAh4OjS8BffycBbwtnXGj2rPOOuF6/nY/K/3hPz5BF330iw2D4CfqfQPddNOqa9XyqX453SXrW6XgOcnhzilf33bqOTS8Y6whYi4niXPZ/RqQs8ad9k/vq6ttxe1u/WkLfe9Ll+MZWxdFHFQPAXS2eqjhmNgT0C10rozudmdBZzHPpNNuNLtY6byvuN5/fe+D9JlPf7MhFno5K33ZPnvQzau+pVzlvCb6+X9/iTsl7ak/P6i+D0oRy8umXvedf1WZ4Xif97z/Y/Snx59Ua6E3wjovJ+j8WxzKHtSZ33PFBXX1c3Z88FKqPc+OwUKviyAOqpcABL1ecjgu1gR0Cz3vjBvnHMucK6Zb6a6IG2PpjRZ0V9R9yC7bdy9a/a2vqqh3FubvXvcD+ulNt9LiRQvp+OOPpf/46S2eBDLsij/jtJPp/Rf+nSv4p57/YVrzlDNFi8frLTu1LW/1jJ2bxVRWekzL7lfuMIKumMJCj/UzIo6Fh6DHsdVQ5tAETAvdFHW2wvVUryornCP8Mo3twUcep4s/+sWGWehupQxhlJu0b7CPvnDZh9WYumxssf/5yTW0YeMm9dWMmTPosDccqOaZy3bHXb+jj3zuy8rNbmkirql5aJ6JKLtGoe4xdCISlzuC4hrXrXCm6ghA0KvjhL0SRkC30KVqLNhipYug829qHXROJsMBcZqVvn1slI497pzGCzpfNMDa5Z/22Xcv+sB7T6fjjj7KTfNqNg9b8Q889Eda9aOb7LS0QVsdUe0Vu0Kcy+5Ubo+DltJhpx5Vsaq+OziBcbDQ68OHo+onAEGvnx2OjDGBIEHnKomos9s9nUoRL8LCgs7/UeKuifr5F62kx//8ZENc1qU4K9+eKw45iNi9vmCBnXt848YX1fj6vQ+VEfGiad7EFoxz2YnedNYxtHC/JfXxsYjSaYyh1wcPR4UhUPmuC3N2HAsCESXgJ+hcVN1K579lLF2sdH0aG//+n7ffTSu/8e26F2aJKJ6WLlaY1K8KHCz0lu4/01l5CPp00se1p41AOUHnNc5ZuO1nM7vh7fnaHPluWun8y9tO+aBaC50nINeelmXaEODCAQTCrImuCzrG0NHFppoABH2qieN6kSAQJOhSOJ7Gxu52PTguyEp/5ukX6Mz3XxqJeqEQ4QiECYaTK3NQXGEiR4Unt2EeerjmwNE1EoCg1wgMuyeDgJ+g87gnR7Dz5nG1O2PnetS7GSD3i5//f7Ty6/+WDDgtWgt2tR/34XcRJ5UJs8kCLbDQw1DEsfUQgKDXQw3HxJ6AKejdHR00NllcaUwEnSuqlkutYhobRD2+3YLF/Kizjqb+hbMpFTLyHxZ6fPtB3EsOQY97C6L8dRGoJOh8Ug6Qk/F0GTsvZ6VzJDwnm7nyK9+hHTtH6ioXDpp6AuxmP+rsY0Nb5lJyWOhT34a4ok0Ago6e0JIEdEFnV3tnW5sS72y+4Lrd3UQyjnXOVrprsfsEyMnv20ZH6Af//jP66R13U3Z0HIFyEe1hbJUfcMKh9U9PC6gXLPSINngLFAuC3gKNjCqWEtAFnd3tE7mcEnX+VKItke2y0po2D1230vVpbCLoslLbq2OjdM+dD9BvH/xfevzxx2G1R6Ajzpgzi3bdczdauP/uNHcPe+5+ozdY6I0mivNVSwCCXi0p7JcoAqagS+VE0EXUeUV0/q+f691vGpvfmunsircT0lj0yINP0lifRd3DKfdzPDXhy3Z7foJmZDqJP/vGOmi4uzjGnx7JUaG3jeRzdHQ8sH0mtBz1stPo+Bj1dHUTfwZtw20F6sulaXt2nGa0d6lPv20yb78EKWZ5Y0nWiPSaro4ONT7OW9gx8kpVgoVeiRB+bxYBCHqzyOK8kSYggr5k94XKMncFyXG7899KggsWsai7FrsWHBc0ja2SqHPMFWejk2A7WRiFXfz8ksDHpynlCcazXwqcCHxHNLlc+ULezVJXKBSz2amlX7XofJ4jz+ctDiNw3Yrz7XNcrwKv/V6gPJ/HSXdrltFOgWu/oOjLy7osmJnze6Q7QBMLBwu9iXBx6rIEIOjoIC1LgEV90eL5xC53nnPOosQWensmrcbSRdQlsQyLulja4na3P+V721VvCjqfRxc/Fkx+XZBzyP5KKNXYvL36mX5uSXTD17L3s8W7uJ8tsG7iGzlen3KnjnGOZ8HWBF2Euzhs4BV1KYsIuqqTvNw4LwL8oqLXvVU7Fiz0Vm356a83BH362wAlmCYCfoKu3MaOlZ5Op2yRdKx03fVezTQ2XWw91ryPWIs466JuvhiIlV5c9a34MqGkXBN614I2rHR+l/ATdYkFcBehKZCy8NXfEk/Ai9M4Fro+jMAvF/a8fPtFwy1LyOlf09QtQl8WFnpohDhBnQQg6HWCw2HxJyCCzlHu3e3tbrpXsYKVuDuWcCUr3W81Nt317FrjjhVtWuliAYug2y8WRStdLQjjusGDrXTxFpQMB4gbXHO9q30csS56C5wXAx/Xu+udUO5824ugW+m6d0BeRvRUuAsGZlJXe7vygmwY2hb/DhRQA1joiW3ayFcMgh75JkIBm0VABJ3P39vZqdaxlpXWSlzbAVa6CG+tAXK6WLtR82IRV3C9my8cPJau3Oc+Vrq8VKgxcraYlbDXbqXLeVyhdiz1jkwbze0bVE2028AgdWfaKWfl6TW72BHkM7sHfJd4vezW65vVrNN+Xljo094ELVsACHrLNj0q7ifoRQvXWZBFH6/WAuT8xtJdF7sTRCfj0X6udxWgZoyl61a67R2wRVh3YVdrpZvj2UEBcjI2L+Ppcr3+jm7q7ehQVviiGbsoS3xmVy91Z3qpo8OimX0zqKOzu+5OlGRBh4Ved7fAgSEJQNBDAsTh8SUgke5777U7taUzbhQ51yinrNliVHjQWLqeQa5eK72eADmJeJcAObbSeToWW+LmWLpupRdfFIjaMmnaZ+4CmtUxSD1dKWrLdPta081o4SQLOiz0ZvQYnLMaAhD0aihhn0QS8LPQbRe6WMY8UGyMVzd4GpsZyS5/czlkPD2MlS4vHH7T2F6zy1w6dK/XTXnbPv/SBrrm/jubPh98yivmXFAs9FVnfQDP1+lqhBa9LjpcizY8qk2kz0Xv7eh0kYj1W+oCt6eKVQqQi8s0tsGubjrhdUdMaVcY2rGDrv7DL2hocjyxgs4W+vwX03TFxefh+TqlvQsXQ4dDH2hpAmKl93eVjgezMOuud3fudxymsUmq2grJZk49YEWosfBqOg9b5OuGt9D6V7bQHzevoxTHDiT4ycMW+rLhfrrsnNMTXMtqWh77TDUBdLipJo7rRYqAPhedx9Hb0hzpLouwOK53PcNawqaxzerpo+P2P7SuNnlmw1/o1fERGpmcoBe2b6V8Pk+cv344O0Epi2h4coIo7TxiVACgvaWS/NSxJxIQ1kKvq0vhoJAEknxrhUSDw1uBgD4XXdzupqjXaqUzt3oD5DzzyAOmscncbz2bnJ5sppZpbBPZLG0dHaZ37Hsg7b1wT2KX+POvvkjZXJY2Dg/T9pEdqhtsGNqqIu7HspM0mc/7dw0W73xl6zvJgs7WeT5foNVnXIhnays8QCJWR3S6iDUIijP1BEy3e5CVroQ6gdPYXtj2Cm0ZHVGWc7OTu7Hm68lmpr61m3tFuNubyxdnL08Ago4e0vIERNAluQwLOge/2fPE7aj3qZzGJkF57Pr3Swnrl+c9zDS2bD5Hj2/e6KZ4bVaHYDFPOTnzm3WN6T4vr5+zfGwQ4+fT3RAten0Ieos2PKpdJOA3js6/iqhXO42tmmQzdspUZ664m9q1uMiKPX5fXLilGdPYZKEYPdnMluGdahy8WRtb/+3pjLPam12/xG3O+Dnc7Ylr2dhUCIIem6ZCQZtJQHe7s4WuC7pY6c2axqbnXS96Bhq7Gpsad9ci3j1Z7ZwXi807ttPGHdsbjpkfMp3tbcqdn+TV2OBub3jXwQlrJABBrxEYdk8mgWqsdK55uQA5WTNdliJ1c7Q7U8iKgWulS6w2fTW2KqexbRkZbqilnkmnqDPTbg8dJHw1Nna3wzpP5vMhLrWCoMelpVDOphNoppUel9XY2Ip/dXyY1m9/NfSYekcmQx1tbardTO+A32psTW/gZl7AItp3FGPnzUSMc1cmAEGvzAh7tAiBSla6uN7jNo2tGANQumZ60GpsHCi3eed2Ff1e68ZWOU8BzKTS9pKvYpmrhWZs13/S1kyHdV5rL8H+zSAAQW8GVZwztgSCrHSuEEe9N3o1NhZU+0WhOGYu1nwUVmOTZDFD42M0mp0MbFeOYO9sa6eutnZqz2SctdLtFwiZN8/z1fQ59DwEoQIEY9tbnILDOo97Cyam/BD0xDQlKtIIAvVY6bbYF8jySQnbiNXYGjWNrZo10233OGfI818zXWV/I6Lx7KSKWOf10NOpFGV4qp/zUmKume6J/lfWebKsdFjnjbjzcI5GEICgN4IizpEoApVEvRWmsXFIulqzXfMgmGum265zfpEh5UJ312933Oy2dV7ZSpdperHsRBbRqtORFS6WbZfAQkPQE9ioqFJ4AizqS3ZfqMaC65rGZhWXYdWtdH25VHY1swjqU7n0yHixbE3Xu+wvy6vyefySzdiufGP5V82KrjSNzf7dOZ6FWVnuxSECW/CLgs5lKJbDHp4QUfez0pMwjW3fEQTChb/bcIZGEYCgN4okzpM4Aizq+yzdg3h+sSnqrhucVanCmunlprHJVLdyol4cX5fFYpxJYI4FzOdgmTXPYYurZmV7YgCKwWrl1kznc6ohBedFwLTS3eh9w0q3jykKugi9BMip32I+jQ2u9sTd8rGvEAQ99k2ICjSTwNbhnVZ3RwfJSmxmSth6k83EaRqbaaXblr8dxMdCn7fsxVrYk2Ba6bZoF18qJCjObxpbnLLH8Zrnq0+9AM/PZt58OHfNBNAha0aGA1qNgGmpl8vzXs2a6bb4ORaqGm+u7Hqv1krXo8qDVmOrZxqbn+tdlcldEc7f9V7OSrePj2eA3KrTMG7eas+BONQXgh6HVkIZp52Aaan7rZnuuqadFKsS9S7BYuZYuif9qjaWrlvAkkFOjVerxWJK87zrGeh0kfWOx/uPpYuHwRzP1vO86wFyYkXrrncJfGNxLmel23ns4z+NDWI+7bcjChBAAIKOrgECVRIwLXVd1OO4Gls109iUgCv3uv80tlqs9HIBcnFJNgMxr/JmwW7TQgCCPi3YcdG4EtAtdakDprHZrvekT2ODmMf1rm2dckPQW6etUdMGEdAt9RJRN6PK2ZXOo+QRmMamjG2ZhuYkwUlVmMaWc6LcyyWbkSGC8NPYivPWIxUgh7nmDbpzcJpmE4CgN5swzp9IAnqKWFvQ7OldYVdjq34aW3EKm8zxdl3aVU5jU4F5espZx8qeymlsalqcLKsawWlssMoTefsmtlIQ9MQ2LSo2FQTYBZ9Op1UCGj3PezFQzZ7v7Y63O8lZ/ALk7LnZpRHvrgWsHVsuQE7mpZvJZooJaMoHyJnJbfQAOb9kM1K+RE1jg1U+FbcPrtFgAhD0BgPF6VqTgIyt6y54EfWgPO/uoiXaNLZGr5kelWlszIC3qE9j4wfi9ZiS1po3cQJqDUFPQCOiCtEhwMLOpent7KRcIU/ZvC1kYax03QLGNLbmtDWEvDlccdapJQBBn1reuFoLERCrfSKXU9nSlIVaJkAuTLIZPje79ZWD30gJ65fnXcb87XzwlipXq01jg4i30M3YIlWFoLdIQ6Oa00tALHfb7VxcV71Sshk7GYs3eE2sdP60x+ZLk82413HG3SWjWzOSzYgHoVmrsTVszXRn4XWsjja99wKu3jwCEPTmscWZQaBqAqOTE9bGV7dRR0e7Sgubz+XJyqSqXI3NG/Eu1reyvJ1AOz2avPhCoC28oi/c4uRft6e5OTnbHQ+DTGPL5VWonHo5SXGUulj4EjVvzEu3XzCKLyYqfsAdV7ev4S7WIv92pgAqD4PKklfdBsGujhP2Sh4BCHry2hQ1AgEQAAEQaEECEPQWbHRUGQRAAARAIHkEIOjJa1PUCARAAARAoAUJQNBbsNFRZRBoBoGVV19nbdy0mbYMDTXj9L7nvPXbX8czbMpo40JRJ4CbIeothPKBwP8RYLHcNjpBs3o6FY85s2e6XLq7umhsfJym83PdhhdVebiM/X09U9Zm7YW851p8/asvvwjPtSlrAVwoSgTQ8aPUGigLCGgErv3xzdYrW151v8mmM+rffiImQi+iOpV/8zWlbFLYTXPzNP/lDPFn/3MTtPM1nU352+wwOpuVl1yI5xvuqJYigA7fUs2NysaBwKpbfmmJxauL5c7hUdf61f/N+wT9HXRMs/bfubSL56d5MWecxwx/L//mPcL8nbfUC4JsUh/5hLDHoaejjI0mAEFvNFGcDwRCENDFXKxeESm2dnkTy1f/d7nv5Dfz0+/4nvYOmrExryzravb3VLWcWIdgUnKo/iIg/3ZeInSR170ZsNYb2QA4V1QJQNCj2jIoV8sR0MVcH4sWIXeBsHDqVrD5t+zoJ7CGAAaek3+Q8/qd3+c7fhkYzU56rXDTEtevb56/mr+DeoUh8rqww1pvuVupZSsMQW/ZpkfFo0KAhZyD2mS8XMTcFXJH6DyCabqrdeH0+82sbLnj/cAE7O+WSV4AtGN70u1ega+mXOUaxc8yL1cvwy0vwg5rPSo9H+VoNAEIeqOJ4nwgUAMBPfDNY5XPs9OyulsVAl4ioDWUo65dxUugewKIyC2HJvJ62cxy1vJ3hlKUzxfIfLkp8Q5oHgw/ax2iXleL46CIE4CgR7yBULzkEhAXe6B73RBKJlFOGM0gM49QGq5u8zdf6187pqyA5q2iwEpzme5+EXftxUTEWQLlKv2tTm267OU7n/N7eGjWOlzwyb2nWr1mEPRW7wGo/5QT0F3sQWKuu7IDXe2OuAWKs2Yhl7X2Deu/oqu8UnS6XEwXeuPlRIk3LyXrbNX8rbTbOcbc33zZKakvvwy1d9D7D3wrLZo9SOvXbaJHn15LPJsA1vqU3wK4YJMIQNCbBBanBQGTQNBYOe8n4+WeMWk/q1M/adCYciWBds7h66Kv8tggAS3n9hcRFks8k0mXCLRnH7Io6G+FxnS/ay8wJW7/vEVLZu5CHz78GJcgi/q6Ldto/YZNdNFZp+JZiFs29gTQiWPfhKhAHAhUHcHumqzeWzNwnNnPCg8QehZA13jOFzzR6B6LN8Cyrni8dk79fB5XuvHC4BH3fIGUyJf5lMh72c8TiR/0sqNMe9sb8I0TzqTujg4am5xUf4ulzkGJEPU43EkoYzkCEHT0DxBoMoFKYu4XKV4y/u0It1/AmfsOoLmxqxqPNgLYWCSV9hliz2LoEVCNl59Frl/bzyrXXyrESq/GMjePU2XV3Pa61e4msDHG98/b78102LI9KOekjGVhZ1G/7a574Hpv8n2A0zefAAS9+YxxhRYmUDHwTbPIy4m1rbRapjW/4DJnnFifC17OzW0G0Zn7siiWFVo/K9/5zrXQtZcBU7xdAS7jWjev775ciJDL+flv49/mixKf63W7LaIPHvoWhbNgFWgsm6VCoUD3PvpnevSxJyDqLXyvJqHqEPQktCLqEEkC+pQ0yfqmJ4kpCXZzrHC9Mr7TtJwddEs46GXAtNR1EZWXBNPN7Qq54/oWq92znymohpCLe951n+uCW4VrPcj1rrvYzWuIxe5XZ/eFiIi+9a73UYeTF59FfWRiAlZ6JO8gFKpWAhD0WolhfxCokgAL+pp1m1X+dU7fyguUlGyZlGcqmmuwOwFfntznjpUeOOdaiyQ33d5y3pLx6UrWsVjhPpawR0DN84hom1Hp2nmqcbOzSz1onF1ePPyE3C8KXs7Dbvcj991TIckVCsr9zq73VTf/ii4753Q8E6vs39gtegTQeaPXJihRQgiIhc7WeUkUe4CQiyWpRLuQ9ZBwRVqz5MsJV90ubk3EK7rdfYRcfwnRy+yO0ZsibYi+r9DrHgDjZcH1Opjfa3PWdYv/iD32pXMPONQVdP7HzvExuuPeR+iZNWvhdk/I/deK1YCgt2Kro85NJ6Bb53wxTxpXx9Kuyvp29jWD0oKEUg9gc6eFmePYFaLIzWh2PViuUhS67KuKrbvsNRHXXxJKyutTNtfNrr3IyItPyTBAJQ+Ak2XuWyed7fYBsdKfWfs8guOafmfgAs0kAEFvJl2cu2UJXHLltZbH1e6T9U3gmFPGSixcbfxZCaUjjvq/A13pmtVal4vbubYnm1slN301FniV5dJfDPR6e+ru97IQ8GIgDFa+9SRaPGMXsizLdbuzoK+6/S66+vKL8Fxs2Ts33hVHx413+6H0ESXw/su/ZM1duECVbpOWl92c5uUb9BZkUWtCqoxVZ5paSUS5j6DqLw21RK6bLx1VvRQERb9zmZ1kMp7zFAqUSReTzJQ0acEiStsrzOnJaNz9nN89Y+3GS4e8AEhk/3teewgdu3R/Jei8sZXObvcvXPMDCHpE7ykUqzIBCHplRtgDBGomIILumwHOsXcGxOwAABhtSURBVNY90djOeG+56V6qED5ir8Rd5pAHWKtm5Lpf8hY9yMxjGZeLdg9w3wswX7c7WZRiEa7m6WORZ6Z5qswx6ZT2UuBwknoII7by+doHLVhCFzlZ48RK54j3f/73G+iKi8+rpmQ19wkcAALNJoCO22zCOH9LEjj3U1+2BgYHKb+s315CVClKcPY3v6h0lTSlzDxud9pWwPi0b3R4te5y02r2sZKrsta186Qca7imDlGDoMt5LVF93XI3XiJm9/TRV99+pjpEt9L/9YZbEeleUwNh5ygRgKBHqTVQlsQQCBJ03xXQnFoHCbB6F9Dd6wFTwsxAOXfKl4h4Gdd2tWLrimVAS1V7nqobug5Br/bcVx5/Bs3p7XdFnd3uP7r9Djr/lBPxXKwWIvaLFAF03Eg1BwqTFAK+gi5WekA+c0/0ty7yZhY0/k1Pxxo0Nl2Lazuq4E1B53I26Kn1iaNOoGVz5rmCPpnP0S2/uQ9T16LaF1CuigQadGtUvA52AIGWIhAk6GZSGDOQSw/8CvpN6blfpLtmiZcba45VQzRR0N+574F00vKDXEEfz2Xp2p/cTiNDQ5iLHqtOgsIKAQg6+gIINIHAuz78aWu/ZUv9l0XlsfQy86WVIW8utGKOfYcdm25CnZtyyikUdHa5f+E7P1RZ/TB1rSmtiZM2mQAEvcmAcfrWJFAuKI7FujPdpjLBlZtyVjIf/f8EJzGWd7XdwhB05XFv0FPLtNBZ0D/401W06qwPNOgK1VYS+4FAYwig4zaGI84CAh4CpoWufnQsc/4nu955myjk1KcewKZb6ErwW1HINZpmcHyjBP2g+cWpa3y5v27fQTfffiei3HEvx5YABD22TYeCR5lAoMvdmbrG0e76Nkl5ldzEnL7W6mLOjJol6Mtm70afePOJbjPc8+RaevDhxyDoUb6xULayBCDo6CAg0AQCZaPcnevN6uqh8ckspTIpsvIWsagrAStYymKvOvlKE8ofpVM2S9C5jle/833U63hLVv/xAdr6+AYIepQaH2WpiQAEvSZc2BkEqiPg53I3I9xZ0HljKzxnFWwxd4SdRZ0zl2FrnoXObI/daz969+sPo5HsJH3ylzfS7ju6IejodLElAEGPbdOh4FEmEDiGrhTcUuPp7Hbv7+qibMG2zEXYWdTzVFAZzPJWgQr1ZFiLMpway9ZMC52LsmLJUlq/fRttW/8KLcrMhKDX2D7YPToEIOjRaQuUJEEE/FzuuoUuke4s6LLpwp7NOyJvFZSos7i3qrA3W9A5b49cY/7LGeRyT9B92GpVgaC3WoujvlNC4JjzPmodevDrvOugGxniuCDzegeoLZOhyZwd7a6LukUWFQoW5ay8+iyov/n/W2truqATL+aWpsJEjvrWZTEHvbW6V6JqC0FPVHOiMlEiIGuib1+QsRdocdzs8m8u62BHF83o6lFizZsu7GKVK7e7EnT7M6+s9dYZX2+moPMiLZ875mT6zbNP0F0PPkz0MgQ9SvcQylIbAQh6bbywNwhUTWDl1ddZ2XSmaKXLkdqqa+x6333mbFvM87aVzlY4T2GzLXR2uRfH0m1Bb63x9WYKem97J533hjfRH55/lv60eT1dd+r5eCZW3cOxY9QIoPNGrUVQnsQQEEHnCql10bU56LqVvmhgJnVk2lS9c/rYecEOiGNrnEVdD5LjADr+rSXG15u44lo6laJUOq3m/++5oxcBcYm5+1qzIhD01mx31HoKCAQJukS5SxF4+tqCgVk0mp2gTCqlrHMl2I6Frgu3R9gda10X/EQGzjUwnzs/8FIs4qkUpcn+5MxzaSuNKWtTcE/gEs0lAEFvLl+cvYUJXPvjm6016zZTf18PbZpnjHk7i7MInuVzF6h/ZvNZ2yoni3KFPPFQuZ+ws+iL0PPwuwTO2YKfsMC5kILOVjhvpoinWNApRfx7Jp2m3hcmEeHewvdrEqoOQU9CK6IOkSTAgr5p2w5VtkCXuxP5vmRgFg04iWbYNs/n865gK7d6gaevF6ev2YFytitehN0bOJeg+et1CLot4o71rVvilFYCzmuqi9BnUmk15JH5ywgEPZJ3EgpVLQEIerWksB8I1EjA10LXpq7pK63N6u2lJTPs4DhlbbOl7Y6h22Pl6n8FZyzd+a1VAuf0wDj10DKeXKYrnXdJp8UGt61wEXGxysVq58/2dIaufPsZeB7W2Mexe7QIoANHqz1QmgQRCLLQVRVlPfR8wV2F7cAFS5QIqZ8Ledf6FmHn9LBihZvCbgbOKcs9QYFzfoIeNB7uyrgSdNsS10Wc4xRkHJ1Zs4W+12gPnX/KiXgeJuj+a8WqoAO3YqujzlNCwM9C53SvEuEuFrp8vmbGbNq1b0DldVfj6GyNs/td3OqOG94eU7fKBs5xUJ0kprEt+2KQXRwT0+iCzu886XTaE9TGgs3CrLvSRcTtsfNiMJwu7iz2bekM7V2YSWcd9zd4Hk7JnYGLNIsAOnCzyOK8LU+gxEK3zUHFRZZJzWTSlM8XiD8702100MIlbppXU9izLNIeNzy74qsLnIt7Yhpd0DPpFLVnMjwa7jseLq70ciKuW+gc7d67KYcpay1/x8YfAAQ9/m2IGkSUQKDL3RlH19c+Fxf8AfMXU197pxsAVxR1ttrLj68nOXDOFPTu9o4SVzqLNLvTRdBNS9zjZneGNvilYParafrQae/AszCi9xGKVT0BdOLqWWFPEKiJQJCFXs7tvqBvkJbNmaeSydhJZTTXujMubgfIcdCcnXTG3S8gcI73sZPSFDPOxS0xjVfQ0zTQaS9qY46Hi4jrU9Xc6Wpssjtj5uyb52OZyQE9i+hvDzsQz8Kaejd2jiIBdOIotgrKlAgCgS53n0VapMIdqTQducfeanxYxFyNhTvCLhY7Lw8mwi4R8WpuujO+rqa+seBrLvqSjHNuYproZ5zTBb0jk6HBrm47sM2ZR878VPCb8z/1N/+qibgIu+zL+zO79AtjcLcn4o5DJSDo6AMg0CQC5cbQlaVIKcqT5X5KBrnls3ejxTNmu9a3LM7Cwi6WdTWBc+US0yhrPUaBc6ag79LTp1otSMRVyBzPVHMywukirlzyKqguTW3pNF2y4lg8B5t0D+C0U0sAHXlqeeNqLUQgSND9AuI4MI4D5lIFi3o7Oukte+5jR7drbnURdkkw44q6FhFfLnCutsQ00VrRTRf0zrY2mtPbX8z85ljhtogXk8mI2734maaUM3auXPWUptdkZsPd3kL3ZNKrCkFPegujftNGYNUtv7Qee+Z5O/WrtjiLxzJ3ItzZUleWI0e+pYhWLFlKbIWKm1xZ0xavjW5niKs0vl4pMY06V5kV3YpLtUYj45xpoc8fnKF48VQ10wp3Lfe0rfTFjHC2iCtNZ3d7waK+lyYx/3za7hBcuNEEIOiNJorzgYBDwLM4i+Ry1xLKqClrustdE3S2QI/cfW9n7NxJMqPmpRfd7n6BcyzSfuPrLPD8MiArtlVKTOMG40VkRTdzCdW9Zs9VY+R+rnT5zo1410RcxL0tlaa+7SnMPcfdmigCEPRENScqEyUCl1x5rcXWOW/m4ixBVrpY6HzM25e9jnraO4qR7k50u0oqw9IumeAcS9scX681cK64zrq2VGtEAudMQd979q5q/Ft5NXg83JmuVk7EeR9+CZBx96Xd8+io/ffGMzBKNw3KEooAOnMofDgYBIIJvP/yL1lzFy6w3e2yOYll3CVUjYh3XdD3mDmHDln0GhXN7hetXm58XSxyM+OcLPpSy4puknFOVnST1d+mMuOcKei7z9qF+ju7FVURcZUpTim8k7vdcbfrIi7Wu5Vup/MPOhzPP9zAiSKADp2o5kRlokTAT9DZ4jZTvypRciLedUHn70/b/43KEpUxc+/a5/Z8dBlf11ddCwqc81/4pZhxrrbAuakbXzcFfV7/IO3WP8MdDxehFitc/lbj65JsRlZfS6VpScccWOdRullQloYQgKA3BCNOAgKlBM791JetBQvmqR+Uy52tcduktD9YxLWgOFPMeZ9Vp12Y2jq80/rz2hco15uibC5HhZS9lKoKfLMsyhZsD0CjA+fEhR+FFd1MQecXo/12s9eQDxJxe2mW4qprIuyDE92IbMcNm0gCEPRENisqFRUCMo7uut1ZzCUwjiPbtX+bgv5G2lWlJL399/dbi2fPoh2s5EQ02j5uC7gnm1wxcE4fX29m4NyUruhmrInO9T9w/hLqaW9XUe4i7CrVjDP/3C9rXIGIlrfPpAOWL8OzLyo3CcrRMALo1A1DiROBQCkB30h3fbcAQbdSKVp96gXu/fnYk2uUea9EPZWiMU3UVeS6O5XNWZ3NTAtbZeCcO8ZexYpuEjGvgvSmYEU300pfMmMXWjJzF5UtjkU8Lautadnj3Gxyzvzz7pF2WOe4URNLAIKe2KZFxaJAIMhCF7d7kIW+78igJx2pWOlK1K005brzZOXZKucQNcda90nzGjZwzs7/Xt2KblwQCZyzl3xle7hxmynomXSaVizZi9rUymv2WDm/CPFQhrLYjSQyLPq79+5KB+y+EM+9xjULzhQhAujYEWoMFCWZBMRK16PdZQ66n6CzDq4+48KSe1OsdBH1VE+BsipLXD4wZ7tfYhq2rMWqdpPVOAu/RHlFN1PQmcOes+bQXrN3VVa6KeLKYnfWQVdT1YYI1nkybzHUyiEAQUdXAIEmE2ArnS+hMsZJghktst0V9UKB2Oq87tTzfe9L3Uqnnl4aodGS6HdPFjkZYy9wUhkWfTsxjWSJq2ZFt0oZ56Y0cM5nHJ25Hrn7UprZbc/3FxF3c7w7gs6u9/mdu8A6b3Jfx+mnlwAEfXr54+otQsBjpWdst7BkiWMEkvp1+fBA2ZW/XCu9p1eRY1HnTaasucukOqliJXDOFt7i+LpfYppqVnRz57fzGL2zopvfGL45vq6Xj/9d7+Z3KEe8v23v/ZWNbo+Ze8fT+bvuyU5MU6sXOo6LDQEIemyaCgWNOwHT9a7c7s6iLGKlB1nnet1NUZ9IT5Ssi66WUlWBcPb4epjAOduyd14GeEw9n7c9A1UEzjV8RTcfK53HxmV632NPPUO5wQ7b1a7G0dOUsoiOXrofnnVxv4FQ/ooE0MkrIsIOINAYAiUBcux21/K5VyPmXBJT0Pm7bGbScb/b89OVoLsWeWMD58qt6CZZ5IpJbrQXAZXxzrbs7TH8+gLnTCt99enFeAN9NkC2M6sC496y53I85xrThXGWiBNAR494A6F4ySIgyWY4QE7PGqdPUaumxiJcvbsM0MhYntKdBco6lrNaoIVE1G3R1OeMu2LrJKaptKKbGTinpqgpMS7mk5dz2tPX7HF6FXznLO7C3gI7Yt5ZKc4j7LVnnBNR18W8Gm7YBwSSTACCnuTWRd0iS+Az16xWA8lXXHxe3fcgizoLOm8i6mpJVEc4WVj1wDdT2IMS01Ra0c3OD88CXSrsU7mimzm1L7KNjYKBwBQRqPthMkXlw2VAAATKEDBFvb2bXEtdxq91YddXVJNUsbUEzoVd0c3OSW+/CIQJnAua2ofOAgKtTACC3sqtj7rHnoC43ucvmkdDoyPKUu/qSdNkPudOadOzyMn4OlvhtQbO2au+eddkZ4s8zIpu7uIyToBdVSu6WUSrtHHz2DciKgACDSIAQW8QSJwGBKaLgIj6osXzadvIsCrGJE+Ec8awZTqaiDmPr/sFzukrupmru9WyohuHvZULnKttRbfSwDmOaJ8u1rguCESZAG6MKLcOygYCVRJgURcrXT9EF3YZX9fF3BRuv8Q09ouBd6lWZZlrqWaVF8B5UQgaXw8KnFPlUhZ6aeBccYjA9gRAzKvsENitJQlA0Fuy2VHpJBJgURcrvaOjnSYns2RlUm4AWzFDXHH8Omh8XcS63sA5FWkvwXlGRHy9gXPfOflcPK+S2HFRp4YRwA3SMJQ4EQhMPwER9Yl8jkbGx6mtvU2txJZz1kznz6JVrq/SVoyIF6uYp8FxKH4xat4ZL9cyzpnpY/UIeRlf9xN2NX5fRWIaufa/vuNsPKumv3uhBBEngJsk4g2E4oFArQR0UR/PZVU6VF2U9TFsEXe/wLlmJaZRgXCSbc7JOMcvGhy5biam4XJ/7YR34zlVayfA/i1JADdKSzY7Kp10Arqoc13ZYufNHet25pGHCZyTqWfNXNHtS8edhmdU0jsr6tcwArhZGoYSJwKB6BHQhd0731xysdsJYkTYa0lMY2acy6plXLUV3UIGzn3+6JPxfIpel0KJIkwAN0yEGwdFA4FGEBBRZ4uaXdssvK617i6y4mR+0yLX/TLO6YlpzMC5ciu6mWPt5cbXL3vziXguNaLhcY6WI4Abp+WaHBVuZQJbh3da4n4XYbeD3/g/pCLigwPnJCjOzsnOgi+Bc2FXdOM2ufjwY/A8auXOibqHJoAbKDRCnAAE4kdAd8UrVzkHqjnzwfnTDJwrBs0Vo+HDrOgm57vgjW/GMyh+3QcljigB3EwRbRgUCwSmkgBb7pxlrquzg8YnJokyKSXwQcJezYpues52+Xcun6f3HHA4njtT2bi4VssQwI3VMk2NioJA7QRE6DlHvCz8Ita1d1U22w1vCz3RMXvth2dL7bhxBAiEIoCbLhQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIABBj0Y7oBQgAAIgAAIgEIoABD0UPhwMAiAAAiAAAtEgAEGPRjugFCAAAiAAAiAQigAEPRQ+HAwCIAACIAAC0SAAQY9GO6AUIAACIAACIBCKAAQ9FD4cDAIgAAIgAALRIPD/A6/WW8K6bMNuAAAAAElFTkSuQmCC"/>
+          </defs>
+          </svg>
+          
+        />
+      </button>
+      <div class="hidden bg-white border shadow-lg rounded-lg w-80">
+        <div class="bg-green-600 text-white flex justify-between items-center p-4">
+          <span>Chat with us</span>
+          <button class="text-white">✖</button>
+        </div>
+        <div class="p-4">
+          <p class="text-gray-600">Hi there! How can I assist you today?</p>
+        </div>
+        <div class="p-4 flex items-center space-x-2">
+          <input
+            type="text"
+            placeholder="Type your message here..."
+            class="flex-1 border rounded px-4 py-2"
+          />
+          <button
+            class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
