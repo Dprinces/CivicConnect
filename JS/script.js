@@ -4,7 +4,6 @@ document.getElementById('menu-btn').addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });
 
-
 // Function to display a signup popup
 function showSignUpPopup() {
   const popup = document.createElement('div');
@@ -48,6 +47,7 @@ document.querySelectorAll('a[href="CreateRequest.html"]').forEach((element) => {
     showSignUpPopup(); // Call the popup function
   });
 });
+}
 
 // Function to display a login popup
 function showLogInPopup() {
