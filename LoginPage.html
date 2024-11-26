@@ -3,54 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CivicConnect - Login</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <title>CivicConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-gray-100 font-sans">
+  <body class="bg-gray-100">
     <!-- Navbar -->
     <nav class="bg-white shadow-md">
-      <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
-      >
-        <div class="flex items-center">
-          <img src="./assests/image/CivicConnect.png" alt="CivicConnect Logo" class="w-10 h-10 mr-2" />
-          <span class="text-green-700 text-2xl font-bold">CivicConnect</span>
+      <div class="container mx-auto px-14 py-2 flex justify-between items-center">
+        <!-- Logo and Title -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="./assests/image/CivicConnect.png"
+            alt="CivicConnect"
+            class="w-18 h-18"
+          />
+          <span class="text-green-700 text-4xl font-bold">CivicConnect</span>
         </div>
-        <ul class="flex space-x-6 text-gray-700">
-          <li><a href="#" class="hover:text-green-700">Home</a></li>
-          <li><a href="#" class="hover:text-green-700">About us</a></li>
-          <li><a href="#" class="hover:text-green-700">All Reports</a></li>
-          <li><a href="#" class="hover:text-green-700">Submit Request</a></li>
-          <li>
-            <a href="#" class="hover:text-green-700">Trending Requests</a>
-          </li>
-        </ul>
-        <div class="flex items-center space-x-4">
-          <a
-            href="#"
-            class="text-white bg-green-700 px-4 py-2 rounded hover:bg-green-800"
-            >Log in</a
+
+        <!-- Desktop Links and Right Side Buttons -->
+        <div class="hidden md:flex items-center space-x-10 text-green-700 font-semibold">
+          <a href="./AboutUs.html" class="hover:text-green-700">About us</a>
+          <a href="./AllReports.html" class="hover:text-green-700">All Reports</a>
+          <a href="#" class="hover:text-green-700">Create Request</a>
+          <a href="./AllRequest.html" class="hover:text-green-700">All Requests</a>
+
+          <!-- Right Side Buttons -->
+          <button class="bg-green-700 text-white px-4 py-1 rounded">
+            <a href="./LoginPage.html"> Log in </a>
+          </button>
+          <button
+            class="border border-green-700 text-green-700 px-3 py-1 rounded flex items-center"
           >
-          <button class="text-gray-700">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.0002 19.0001L14.6572 14.6571M14.6572 14.6571C15.4001 13.9142 15.9894 13.0323 16.3914 12.0616C16.7935 11.091 17.0004 10.0507 17.0004 9.00008C17.0004 7.94948 16.7935 6.90917 16.3914 5.93854C15.9894 4.96791 15.4001 4.08597 14.6572 3.34308C13.9143 2.6002 13.0324 2.01091 12.0618 1.60886C11.0911 1.20681 10.0508 0.999878 9.00021 0.999878C7.9496 0.999878 6.90929 1.20681 5.93866 1.60886C4.96803 2.01091 4.08609 2.6002 3.34321 3.34308C1.84288 4.84341 1 6.8783 1 9.00008C1 11.1219 1.84288 13.1568 3.34321 14.6571C4.84354 16.1574 6.87842 17.0003 9.00021 17.0003C11.122 17.0003 13.1569 16.1574 14.6572 14.6571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+            Search
           </button>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6 text-green-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white space-y-2 px-4 py-3 border-t border-gray-200"
+      >
+        <a href="#" class="block text-gray-700 hover:text-green-700">Home</a>
+        <a href="./AboutUs.html" class="block text-gray-700 hover:text-green-700">About us</a>
+        <a href="#" class="block text-gray-700 hover:text-green-700">All Reports</a>
+        <a href="#" class="block text-gray-700 hover:text-green-700">Create Request</a>
+        <a href="./AllRequest.html" class="block text-gray-700 hover:text-green-700">All Requests</a>
+
+        <button class="bg-green-700 text-white px-4 py-2 w-full rounded mt-2">
+          <a href="#"> Log in </a>
+        </button>
+        <button
+          class="border border-green-700 text-green-700 px-4 py-2 w-full rounded mt-2 flex items-center justify-center"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.0002 19.0001L14.6572 14.6571M14.6572 14.6571C15.4001 13.9142 15.9894 13.0323 16.3914 12.0616C16.7935 11.091 17.0004 10.0507 17.0004 9.00008C17.0004 7.94948 16.7935 6.90917 16.3914 5.93854C15.9894 4.96791 15.4001 4.08597 14.6572 3.34308C13.9143 2.6002 13.0324 2.01091 12.0618 1.60886C11.0911 1.20681 10.0508 0.999878 9.00021 0.999878C7.9496 0.999878 6.90929 1.20681 5.93866 1.60886C4.96803 2.01091 4.08609 2.6002 3.34321 3.34308C1.84288 4.84341 1 6.8783 1 9.00008C1 11.1219 1.84288 13.1568 3.34321 14.6571C4.84354 16.1574 6.87842 17.0003 9.00021 17.0003C11.122 17.0003 13.1569 16.1574 14.6572 14.6571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Search
+        </button>
       </div>
     </nav>
 
