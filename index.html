@@ -10,12 +10,34 @@
       body {
         font-family: 'Inter', sans-serif;
       }
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(134, 198, 111, 0.5);
+        z-index: 50;
+      }
+
+      .popup {
+        position: fixed;
+        top: 20%;
+        right: 5%;
+        transform: translate(-50%, -50%);
+        background: white;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        z-index: 100;
+      }
     </style>
   </head>
   <body class="bg-gray-100">
       <nav class="bg-white shadow-md">
       <div class="container mx-auto px-14 py-2 flex justify-between items-center">
-        <!-- Logo and Title -->
+     
         <div class="flex items-center space-x-2">
           <svg width="89" height="72" viewBox="0 0 89 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect width="89" height="72" fill="url(#pattern0_181_169)"/>
@@ -29,14 +51,12 @@
           <span class="text-green-700 text-4xl font-bold">CivicConnect</span>
         </div>
 
-        <!-- Desktop Links and Right Side Buttons -->
         <div class="hidden md:flex items-center space-x-10 text-green-700 font-semibold">
           <a href="./AboutUs.html" class="hover:text-green-700">About us</a>
           <a href="./AllReports.html" class="hover:text-green-700">All Reports</a>
           <a href="#" data-action="create-request" class="hover:text-green-700">Create Request</a>
           <a href="./AllRequest.html" class="hover:text-green-700">All Requests</a>
 
-          <!-- Right Side Buttons -->
           <button class="bg-green-700 text-white px-4 py-1 rounded">
             <a href="./LoginPage.html"> Log in </a>
           </button>
@@ -81,7 +101,7 @@
         <a href="./AllRequest.html" class="block text-gray-700 hover:text-green-700">All Requests</a>
 
         <button class="bg-green-700 text-white px-4 py-2 w-full rounded mt-2">
-          <a href="#"> Log in </a>
+          <a href="./LoginPage.html"> Log in </a>
         </button>
         <button
           class="border border-green-700 text-green-700 px-4 py-2 w-full rounded mt-2 flex items-center justify-center"
@@ -113,9 +133,7 @@
           View and monitor government reports and also create a request on what
           you want government to work on.
         </p>
-        <button class="bg-white text-green-700 font-semibold px-6 py-2 rounded">
-          Get started
-        </button>
+        <a href="#" data-action="get-started" class="bg-white text-green-700 font-semibold px-6 py-2 rounded"> Get started</a>
       </div>
     </section>
 
@@ -131,7 +149,7 @@
           initiatives.
         </p>
         <a href="#">
-          <button class="bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700">
+          <button class="bg-green-700 text-white px-6 py-2 rounded">
             View Reports
           </button>
         </a>
@@ -148,13 +166,8 @@
         <p class="text-green-700 mb-4 font-semibold">
           Create a request on what you want <br> government to work on.
         </p>
-        <a href="#">
-          <button
-            class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700"
-          >
-            Create Request
-          </button>
-        </a>
+       
+        <a href="#" data-action="create-request" class="bg-green-700 text-white px-4 py-2 rounded">Create Request</a>
       </div>
       <!-- Card 3 -->
       <div
@@ -169,14 +182,14 @@
           Submit weekly reports on your official <br> activities
         </p>
         <button
-          class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700"
+          class="bg-green-700 text-white px-4 py-2 rounded"
         >
           Submit Reports
         </button>
       </div>
     </div>
 
-    <section class="bg-green-600 py-8 relative">
+    <section class="bg-green-700 py-8 relative">
       <div
         class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
       >
@@ -190,7 +203,7 @@
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Infrastructure Development
             </h3>
-            <p class="text-gray-600 text-sm">
+            <p class="text-gray-800 text-sm text-justify">
               Dr. Tijani ramped up his investment drive as he visited Estonia on
               the invitation of the government to explore opportunities for
               partnership and collaboration towards achieving our shared
@@ -214,7 +227,7 @@
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Digital Transformation
             </h3>
-            <p class="text-gray-600 text-sm">
+            <p class="text-gray-600 text-sm text-justify">
               Dr. Tijani ramped up his investment drive as he visited Estonia on
               the invitation of the government to explore opportunities for
               partnership and collaboration towards achieving our shared
@@ -237,7 +250,7 @@
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Infrastructure Development
             </h3>
-            <p class="text-gray-600 text-sm">
+            <p class="text-gray-600 text-sm text-justify">
               Dr. Tijani ramped up his investment drive as he visited Estonia on
               the invitation of the government to explore opportunities for
               partnership and collaboration towards achieving our shared
@@ -260,7 +273,7 @@
             <h3 class="text-gray-800 font-bold text-lg mb-2">
               Infrastructure Development
             </h3>
-            <p class="text-gray-600 text-sm">
+            <p class="text-gray-600 text-sm text-justify">
               Dr. Tijani ramped up his investment drive as he visited Estonia on
               the invitation of the government to explore opportunities for
               partnership and collaboration towards achieving our shared
@@ -277,7 +290,7 @@
       <div class="flex justify-center mt-8">
         <a
           href="./AllReports.html"
-          class="bg-white font-bold text-green-800 px-4 py-2 rounded hover:bg-white"
+          class="bg-white font-bold text-green-700 px-4 py-2 rounded hover:bg-white"
         >
           Go to page
         </a>
@@ -484,7 +497,7 @@
           </svg>
       </button>
       <div class="hidden bg-white border shadow-lg rounded-lg w-80">
-        <div class="bg-green-600 text-white flex justify-between items-center p-4">
+        <div class="bg-green-700 text-white flex justify-between items-center p-4">
           <span>Chat with us</span>
           <button class="text-green close-chatbot">✖</button>
         </div>
@@ -498,13 +511,13 @@
             class="flex-1 border rounded px-4 py-2"
           />
           <button
-            class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-          >
-            Send
-          </button>
+            class="px-4 py-2 bg-green-700 text-white rounded"
+          > Send  </button>
         </div>
       </div>
     </div>
+    <script src="./JS/signup.js"></script>
+    <script src="./JS/Getstart.js"></script>
     <script src="./JS/script.js"></script>
     <script src="./JS/chatbot.js"></script>
     <script src="./JS/popup.js"></script>

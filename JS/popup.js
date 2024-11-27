@@ -1,44 +1,42 @@
-// Function to display a signup popup
-function showSignUpPopup() {
+// Function to display a login popup
+function showLogInPopup() {
   const popup = document.createElement('div');
   popup.style.position = 'fixed';
   popup.style.top = '20%';
-  popup.style.left = '50%';
+  popup.style.left = '80%';
   popup.style.transform = 'translate(-50%, -50%)';
   popup.style.width = '300px';
   popup.style.padding = '20px';
-  popup.style.backgroundColor = '#fff';
   popup.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
   popup.style.borderRadius = '8px';
   popup.style.zIndex = '1000';
-  
-  popup.innerHTML = `
-  <h2 class="text-2xl font-bold text-center text-black-700 mb-4">
-    Please Sign Up
-  </h2>
-  <p class="text-center text-gray-500 mb-6">
-    Don't worry, we won't take your real details.
-  </p>
-  <button class="bg-green-700 text-white text-end px-4 py-2 rounded close-popup">
-    <a href="./SignUp.html">Sign Up</a>
+
+  popup.innerHTML = ` 
+ <div class="bg-white w-[449px] h-[149px] border border-gray-300 flex justify-center items-center gap-4">
+  <button class="border border-green-700 font-bold text-green-700 px-2 py-2 rounded hover:bg-green-700 hover:text-white">
+   <a href="../LogIn.html"> Login as Citizen <a/>
   </button>
+  <button class="border border-green-700 font-bold text-green-700 px-4 py-2 rounded hover:bg-green-700 hover:text-white">
+    <a href="../LogIn.html"> Login as Government Official</a>
+  </button>
+</div>
 `;
-
-console.log('Button clicked!');
-
-popup.querySelector('.close-popup').addEventListener('click', () => {
-  document.body.removeChild(popup);
-});
-
   // Append popup to body
   document.body.appendChild(popup);
 
+  overlay.addEventListener('click', closePopup);
+  popup.querySelector('closeLogInPopup').addEventListener('click', closePopup);
+  
+  function closePopup() {
+    document.body.removeChild(popup);
+    document.body.removeChild(overlay);
+  }
+  }
 
-// Add an event listener to all "Sign Up" buttons
-document.querySelectorAll('a[href="CreateRequest.html"]').forEach((element) => {
+// Add an event listener to all "Log In" buttons
+document.querySelectorAll('a[href="./LoginPage.html"]').forEach((element) => {
   element.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent default action
-    showSignUpPopup(); // Call the popup function
+    showLogInPopup(); // Call the popup function
   });
 });
-}
