@@ -11,13 +11,17 @@ function showLogInPopup() {
   popup.style.borderRadius = '8px';
   popup.style.zIndex = '1000';
 
+  const overlay = document.createElement('div');
+  overlay.className = 'popup-overlay';
+  document.body.appendChild(overlay);
+
   popup.innerHTML = ` 
  <div class="bg-white w-[449px] h-[149px] border border-gray-300 flex justify-center items-center gap-4">
   <button class="border border-green-700 font-bold text-green-700 px-2 py-2 rounded hover:bg-green-700 hover:text-white">
-   <a href="../LogIn.html"> Login as Citizen <a/>
+   <a href="../LogInCz.html"> Login as Citizen <a/>
   </button>
   <button class="border border-green-700 font-bold text-green-700 px-4 py-2 rounded hover:bg-green-700 hover:text-white">
-    <a href="../LogIn.html"> Login as Government Official</a>
+    <a href="../LoginOf.html"> Login as Government Official</a>
   </button>
 </div>
 `;
