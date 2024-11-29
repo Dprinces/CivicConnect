@@ -77,7 +77,7 @@
     </nav>
 
   <!-- Main Content -->
-  <main class="container mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+  <main class="container mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 h-[800px]">
     <!-- Sidebar -->
     <aside class="w-full md:w-1/4">
       <div class="bg-white shadow-lg rounded-lg p-6">
@@ -90,17 +90,26 @@
     </aside>
 
     <!-- Main Section -->
-    <section class="w-full md:w-3/4 bg-white shadow-lg rounded-lg overflow-hidden">
+    <section class="w-full md:w-3/4 bg-white shadow-lg rounded-lg space-x-6 ">
       <!-- Header -->
-      <div class="px-4 sm:px-6 py-4 flex items-center justify-between">
-        <div class="w-full max-w-md">
-          <input type="text" placeholder="Search" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-200">
+      <div class="px-4 sm:px-6 py-[40px] mb-2 flex items-center justify-between border-b-1" style="box-shadow: 4px 4px 25px 0px #00000040;">
+        <div class="relative w-full max-w-md pr-6">
+          <input type="text" placeholder="" class="w-[10rem] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-200 ">
+          <div class="absolute bottom-5 top-3 pl-2">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0002 18.5001L14.6572 14.1571M14.6572 14.1571C15.4001 13.4142 15.9894 12.5323 16.3914 11.5616C16.7935 10.591 17.0004 9.55069 17.0004 8.50008C17.0004 7.44948 16.7935 6.40917 16.3914 5.43854C15.9894 4.46791 15.4001 3.58597 14.6572 2.84308C13.9143 2.1002 13.0324 1.51091 12.0618 1.10886C11.0911 0.706809 10.0508 0.499878 9.00021 0.499878C7.9496 0.499878 6.90929 0.706809 5.93866 1.10886C4.96803 1.51091 4.08609 2.1002 3.34321 2.84308C1.84288 4.34341 1 6.3783 1 8.50008C1 10.6219 1.84288 12.6568 3.34321 14.1571C4.84354 15.6574 6.87842 16.5003 9.00021 16.5003C11.122 16.5003 13.1569 15.6574 14.6572 14.1571Z" stroke="#017D34" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          </div>
         </div>
         <div class="flex space-x-4">
-          <button class="bg-green-700 text-white px-4 py-2 rounded-full">All reports</button>
-          <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white">Sort by department</button>
-          <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white">Sort by State</button>
-          <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white">Sort by Status</button>
+          <div class="rounded-[5px] font-semibold  border  bg-green-700 text-white px-4 py-2  flex items-center justify-center w-36 h-10 " style="box-shadow: 4px 4px 25px 0px #00000040;">All reports</div>
+
+          <div class="rounded-[5px] text-[#017D34] font-semibold bg-gray-100  px-4 py-2 w-52 h-10 flex items-center justify-center hover:bg-green-700 hover:text-white text-center " style="box-shadow: 4px 4px 25px 0px #00000040;">Sort by department</div>
+
+          <div class="rounded-[5px] rounded-[5px] text-[#017D34] font-semibold  bg-gray-100  px-4 py-2 hover:bg-green-700 hover:text-white text-center flex items-center justify-center  w-36 h-10 " style="box-shadow: 4px 4px 25px 0px #00000040;">Sort by State</div>
+
+          <div class="rounded-[5px] rounded-[5px] text-[#017D34] font-semibold  bg-gray-100 px-4 py-2  hover:bg-green-700 hover:text-white text-center flex items-center justify-center w-36 h-10" style="box-shadow: 4px 4px 25px 0px #00000040;">Sort by Status</div>
         </div>
       </div>
 
