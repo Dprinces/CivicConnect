@@ -10,6 +10,28 @@
       body {
         font-family: 'Inter', sans-serif;
       }
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(134, 198, 111, 0.5);
+        z-index: 50;
+      }
+
+      .popup {
+        position: fixed;
+        top: 20%;
+        right: 5%;
+        transform: translate(-50%, -50%);
+        background: white;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        z-index: 100;
+      }
     </style>
   </head>
   <body class="bg-gray-100">
@@ -31,7 +53,7 @@
           <a href="./index.html" class="hover:text-green-700">Home</a>
           <a href="./AboutUs.html" class="hover:text-green-700">About us</a>
           <a href="./AllReports.html" class="hover:text-green-700">All Reports</a>
-          <a href="#" class="hover:text-green-700">Create Request</a>
+          <a href="#" data-action="create-request" class="hover:text-green-700">Create Request</a>
           <a href="./AllRequest.html" class="hover:text-green-700">All Requests</a>
 
           <!-- Right Side Buttons -->
@@ -83,7 +105,7 @@
       <div class="bg-white shadow-lg rounded-lg p-6">
         <div class="flex items-center justify-center">
           <button class="bg-green-700 text-white text-lg font-bold px-6 py-3 rounded-lg shadow-lg w-full">
-            + Create Request
+           <a href="./CreateRequest.html"> + Create Request </a>
           </button>
         </div>
       </div>
@@ -177,8 +199,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <!-- Footer -->
+ 
 <footer class="bg-gray-900 text-white py-6 mt-10">
   <div class="container mx-auto text-center">
     <p class="text-sm">
@@ -187,6 +208,36 @@
     </p>
   </div>
 </footer>
+
+<script>
+  const abusiveWords = ["bad", "ugly", "stupid"];
+
+  function addComment() {
+    const commentInput = document.getElementById("comment-input");
+    let commentText = commentInput.value;
+
+    // Replace abusive words
+    abusiveWords.forEach((word) => {
+      const regex = new RegExp(`\\b${word}\\b`, "gi");
+      commentText = commentText.replace(regex, word[0] + "*".repeat(word.length - 1));
+    });
+
+    // Add the comment
+    const commentsContainer = document.getElementById("comments-container");
+    if (commentText.trim() !== "") {
+      const commentElement = document.createElement("p");
+      commentElement.textContent = commentText;
+      commentElement.classList.add("text-gray-700", "text-sm", "p-2", "border", "border-gray-300", "rounded");
+      commentsContainer.appendChild(commentElement);
+    }
+
+    // Clear the input
+    commentInput.value = "";
+  }
+</script>
 <script src="script.js"></script>
+<script src="./JS/signup.js"></script>
+<script src="./JS/popup.js"></script>
+
   </body>
 </html>

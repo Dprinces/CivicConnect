@@ -60,13 +60,15 @@
             </span>
           
             <div
-              class="dropdown-menu absolute right-0 mt-2 bg-white shadow-lg rounded-md py-2 w-48"
-            >
-              <a href="#" class="block px-4 py-2 text-sm text-green-700 hover:bg-green-700">Profile</a>
-              <a href="#" class="block px-4 py-2 text-sm text-green-700 hover:bg-green-700">Settings</a>
-              <a href="./LoginPage.html" class="block px-4 py-2 text-sm text-green-700 hover:bg-green-700">Logout</a>
-            </div>
+            class="dropdown-menu absolute right-0 mt-2 bg-white shadow-lg rounded-md py-2 w-48"
+          >
+            <a href="./picture.html" class="block px-4 py-2 font-bold text-sm text-green-700 hover:bg-gray-100">View picture</a>
+            <a href="#" class="block px-4 py-2 text-sm text-green-700 font-bold hover:bg-gray-100">My Requests</a>
+            <a href="./LoginPage.html" class="block px-4 py-2 text-sm font-bold text-green-700 hover:bg-gray-100">Profile Settings</a>
+            <hr class="h-2">
+            <a href="./index.html" class="block px-4 py-2 text-sm font-bold text-green-700 hover:bg-gray-100">LOG OUT</a>
           </div>
+        </div>
 
           <button
             class="border border-green-700 text-green-700 px-3 py-1 rounded flex items-center hover:bg-green-100"
@@ -112,22 +114,13 @@
         id="mobile-menu"
         class="hidden md:hidden bg-white px-4 py-3 border-t border-gray-200"
       >
-        <a href="./AboutUs.html" class="block text-green-700 hover:text-green-700">About us</a>
+        <a href="./LoginAboutUs.html" class="block text-green-700 hover:text-green-700">About us</a>
         <a href="./AllReports.html" class="block text-green-700 hover:text-green-700">All Reports</a>
         <a href="#" class="block text-gray-700 hover:text-green-900">Create Request</a>
         <a href="./AllRequest.html" class="block text-green-700 hover:text-green-700">All Requests</a>
         <a href="./LoginPage.html" class="block bg-green-700 text-white px-4 py-2 rounded mt-2 text-center">Log in</a>
       </div>
     </nav>
-   
-    <script>
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
   
     <section
       class="bg text-white text-center py-20"
@@ -547,6 +540,5 @@
     <script src="./JS/Getstart.js"></script>
     <script src="./JS/script.js"></script>
     <script src="./JS/chatbot.js"></script>
-    <script src="./JS/popup.js"></script>
     </body>
 </html>
